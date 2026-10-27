@@ -4,7 +4,7 @@
 
 *H. Windish and H. von Coler, “From SPRAWL to MËSH: Networked music systems for touring and stage integration,” in Proc. 23rd Sound and Music Computing Conf. (SMC 2026), Zagreb, Croatia, 2026*
 
-Show the presentation as GH page: https://l42i.github.io/SMC_2026_Talk/
+**Show the presentation as GH page: https://l42i.github.io/SMC_2026_Talk/**
 
 Conference website: https://smc26.mbz.hr/
 
