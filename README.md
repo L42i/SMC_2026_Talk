@@ -38,6 +38,7 @@ This is handled by `filters/hybrid.lua`.
 
 ## Files
 
+
 ```
 index.qmd              the talk
 _timeline.qmd          HTML port of tikz/timeline.tex (steps in on slides, stacks on phones)
