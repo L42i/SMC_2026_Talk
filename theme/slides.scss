@@ -1,0 +1,68 @@
+/*-- scss:defaults --*/
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@400;600&display=swap');
+
+// Paper palette (from tikz/timeline.tex)
+$sprawl-blue: #2B4C7E;
+$v2-teal:     #1F7C78;
+$mesh-orange: #C65D29;
+$ink:         #1d232b;
+$muted:       #6e6e6e;
+
+$body-bg:    #fbfaf7;
+$body-color: $ink;
+$link-color: $mesh-orange;
+$presentation-heading-color: $ink;
+$presentation-heading-font: "IBM Plex Sans", Helvetica, Arial, sans-serif;
+$presentation-heading-font-weight: 700;
+$presentation-heading-text-transform: none;
+$presentation-heading-letter-spacing: -0.01em;
+$font-family-sans-serif: "IBM Plex Sans", Helvetica, Arial, sans-serif;
+$font-family-monospace: "IBM Plex Mono", Menlo, monospace;
+
+// Large type: the deck is watched through a video call
+$presentation-font-size-root: 44px;
+$presentation-h2-font-size: 1.45em;
+$presentation-h1-font-size: 2.2em;
+
+/*-- scss:rules --*/
+.reveal .slide-number,
+.reveal .footer { font-size: 0.42em; color: $muted; }
+
+.reveal h2 { margin-bottom: 0.6em; }
+.reveal h2::after {
+  content: ""; display: block; width: 2.2em; height: 0.12em;
+  background: $mesh-orange; margin-top: 0.25em; border-radius: 2px;
+}
+
+.reveal ul { line-height: 1.35; }
+.reveal li { margin-bottom: 0.35em; }
+.reveal strong { color: $mesh-orange; }
+
+// Title slide
+.reveal .quarto-title-block .title { font-size: 2.4em; line-height: 1.05; }
+.reveal .quarto-title-block .subtitle { color: $muted; font-size: 1.05em; }
+.reveal .quarto-title-authors { font-size: 0.8em; }
+
+// Section dividers with photo backgrounds: keep text legible over photos
+.reveal .slide.section-photo h1,
+.reveal section[data-background-image] h1 {
+  color: #fff; text-shadow: 0 2px 18px rgba(0,0,0,.55);
+}
+
+// Full-bleed photo helper:  ![](x.jpg){.photo}
+.reveal img.photo { border-radius: 6px; box-shadow: 0 6px 24px rgba(0,0,0,.18); }
+.reveal .caption, .reveal figcaption { font-size: 0.5em; color: $muted; }
+
+.reveal table { font-size: 0.82em; }
+.reveal table th { border-bottom: 3px solid $ink; }
+.reveal table td:first-child { font-weight: 600; color: $muted; }
+
+.reveal .smaller-text { font-size: 0.7em; }
+
+// photos inside columns: cap height so slides never overflow
+.reveal img.ph { max-height: 580px; width: auto; max-width: 100%; }
+.reveal .bignums { font-size: 0.75em; }
+.reveal blockquote { border-left: 6px solid $mesh-orange; background: none; box-shadow: none; font-style: normal; width: 90%; }
+.reveal .timeline { font-size: 30px; margin-top: 1.4em; }
+.reveal .tl-braces { font-size: 26px; }
+.reveal .smaller-text { font-size: 0.8em; }

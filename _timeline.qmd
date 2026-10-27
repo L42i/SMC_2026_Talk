@@ -1,0 +1,41 @@
+```{=html}
+<div class="timeline" role="list" aria-label="Timeline from SPRAWL to MËSH">
+  <div class="tl-item sprawl" role="listitem">
+    <div class="tl-date">2019 / 2020</div>
+    <div class="tl-tab system">SPRAWL</div>
+    <div class="tl-dot"></div>
+    <div class="tl-desc">Central server for routing, mixing, spatialisation. Access points on a <b>wired</b> LAN.</div>
+  </div>
+  <div class="tl-item teal fragment" role="listitem">
+    <div class="tl-date">2023</div>
+    <div class="tl-tab system">SPRAWL V2</div>
+    <div class="tl-dot"></div>
+    <div class="tl-desc">Server removed; access points in a <b>ring topology</b>. Low latency, still fully wired.</div>
+  </div>
+  <div class="tl-item teal event fragment" role="listitem">
+    <div class="tl-date">Fall 2024</div>
+    <div class="tl-tab">Goat Farm Arts Center</div>
+    <div class="tl-dot"></div>
+    <div class="tl-desc">Atlanta, GA. 12 access points, student-built SuperCollider pieces.</div>
+  </div>
+  <div class="tl-item teal event fragment" role="listitem">
+    <div class="tl-date">Spring 2025</div>
+    <div class="tl-tab">SuperCollider Symposium</div>
+    <div class="tl-dot"></div>
+    <div class="tl-desc">Washington, DC. 4 access points, a 10-hour drive: the touring pain point.</div>
+  </div>
+  <div class="tl-item mesh fragment" role="listitem">
+    <div class="tl-date">Fall 2025</div>
+    <div class="tl-tab system">MËSH</div>
+    <div class="tl-dot"></div>
+    <div class="tl-desc"><b>Wireless</b> Raspberry Pi nodes. Kuala Lumpur debut, 8 nodes as checked luggage.</div>
+  </div>
+  <div class="tl-item mesh event fragment" role="listitem">
+    <div class="tl-date">Spring 2026</div>
+    <div class="tl-tab">ICMC Hamburg</div>
+    <div class="tl-dot"></div>
+    <div class="tl-desc">Workshop and 8-hour autonomous installation.</div>
+  </div>
+</div>
+<div class="tl-braces" aria-hidden="true"><span class="wired">Wired: Ethernet LAN</span><span class="wireless">Wireless LAN</span></div>
+```

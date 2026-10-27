@@ -1,0 +1,64 @@
+# One source (index.qmd) -> two outputs:
+#   _site/index.html   readable web page (share this link in the chat)
+#   _site/slides.html  reveal.js deck   (present this one)
+project:
+  type: default
+  output-dir: _site
+  render:
+    - index.qmd
+  resources:
+    - pictures/
+    - figures/
+
+bibliography: references.bib
+csl: ieee.csl
+link-citations: true
+
+filters:
+  - filters/hybrid.lua
+
+format:
+  html:
+    output-file: index.html
+    theme: [cosmo, theme/page.scss]
+    css: theme/components.css
+    toc: true
+    toc-location: left
+    toc-title: "Talk outline"
+    toc-depth: 2
+    lightbox: true
+    citations-hover: true
+    smooth-scroll: true
+    format-links: false
+    other-links:
+      - text: "Open the slides"
+        href: slides.html
+        icon: easel
+      - text: "MËSH on GitHub"
+        href: https://github.com/L42i/MËSH
+        icon: github
+
+  revealjs:
+    output-file: slides.html
+    theme: [default, theme/slides.scss]
+    css: theme/components.css
+    # 16:9 at a size that survives video-call compression
+    width: 1600
+    height: 900
+    margin: 0.05
+    slide-number: c/t
+    show-slide-number: all
+    hash: true
+    history: false
+    transition: none
+    background-transition: fade
+    controls: true
+    progress: true
+    preview-links: false
+    citations-hover: true
+    footer: "From SPRAWL to MËSH · SMC 2026"
+    # On narrow screens the deck becomes a scrolling page automatically;
+    # append ?view=scroll to the URL to force it.
+    scroll-view:
+      activate: false
+      layout: full

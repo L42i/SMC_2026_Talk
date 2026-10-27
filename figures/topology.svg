@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 620" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" role="img" aria-label="SPRAWL V2 access points wired in a ring versus MËSH nodes connected wirelessly to a router">
+<line x1="340" y1="115" x2="500" y2="208" stroke="#1F7C78" stroke-width="7"/>
+<line x1="500" y1="208" x2="500" y2="392" stroke="#1F7C78" stroke-width="7"/>
+<line x1="500" y1="392" x2="340" y2="485" stroke="#1F7C78" stroke-width="7"/>
+<line x1="340" y1="485" x2="180" y2="392" stroke="#1F7C78" stroke-width="7"/>
+<line x1="180" y1="392" x2="180" y2="208" stroke="#1F7C78" stroke-width="7"/>
+<line x1="180" y1="208" x2="340" y2="115" stroke="#1F7C78" stroke-width="7"/>
+<rect x="302" y="87" width="76" height="56" rx="6" fill="#fff" stroke="#1F7C78" stroke-width="4"/>
+<text x="340" y="123" text-anchor="middle" font-size="22" font-weight="700" fill="#1F7C78">AP</text>
+<rect x="462" y="180" width="76" height="56" rx="6" fill="#fff" stroke="#1F7C78" stroke-width="4"/>
+<text x="500" y="216" text-anchor="middle" font-size="22" font-weight="700" fill="#1F7C78">AP</text>
+<rect x="462" y="364" width="76" height="56" rx="6" fill="#fff" stroke="#1F7C78" stroke-width="4"/>
+<text x="500" y="400" text-anchor="middle" font-size="22" font-weight="700" fill="#1F7C78">AP</text>
+<rect x="302" y="457" width="76" height="56" rx="6" fill="#fff" stroke="#1F7C78" stroke-width="4"/>
+<text x="340" y="493" text-anchor="middle" font-size="22" font-weight="700" fill="#1F7C78">AP</text>
+<rect x="142" y="364" width="76" height="56" rx="6" fill="#fff" stroke="#1F7C78" stroke-width="4"/>
+<text x="180" y="400" text-anchor="middle" font-size="22" font-weight="700" fill="#1F7C78">AP</text>
+<rect x="142" y="180" width="76" height="56" rx="6" fill="#fff" stroke="#1F7C78" stroke-width="4"/>
+<text x="180" y="216" text-anchor="middle" font-size="22" font-weight="700" fill="#1F7C78">AP</text>
+<text x="340" y="294" text-anchor="middle" font-size="40" font-weight="700" fill="#1F7C78">SPRAWL V2</text>
+<text x="340" y="330" text-anchor="middle" font-size="22" fill="#6e6e6e">ring topology</text>
+<text x="340" y="596" text-anchor="middle" font-size="25" fill="#1d232b">wired Ethernet · audio + control</text>
+<line x1="700.0" y1="40" x2="700.0" y2="540" stroke="#d0d0d0" stroke-width="2" stroke-dasharray="4 8"/>
+<line x1="1060" y1="300" x2="1137" y2="115" stroke="#C65D29" stroke-width="4" stroke-dasharray="3 11" stroke-linecap="round"/>
+<line x1="1060" y1="300" x2="1245" y2="223" stroke="#C65D29" stroke-width="4" stroke-dasharray="3 11" stroke-linecap="round"/>
+<line x1="1060" y1="300" x2="1245" y2="377" stroke="#C65D29" stroke-width="4" stroke-dasharray="3 11" stroke-linecap="round"/>
+<line x1="1060" y1="300" x2="1137" y2="485" stroke="#C65D29" stroke-width="4" stroke-dasharray="3 11" stroke-linecap="round"/>
+<line x1="1060" y1="300" x2="983" y2="485" stroke="#C65D29" stroke-width="4" stroke-dasharray="3 11" stroke-linecap="round"/>
+<line x1="1060" y1="300" x2="875" y2="377" stroke="#C65D29" stroke-width="4" stroke-dasharray="3 11" stroke-linecap="round"/>
+<line x1="1060" y1="300" x2="875" y2="223" stroke="#C65D29" stroke-width="4" stroke-dasharray="3 11" stroke-linecap="round"/>
+<line x1="1060" y1="300" x2="983" y2="115" stroke="#C65D29" stroke-width="4" stroke-dasharray="3 11" stroke-linecap="round"/>
+<circle cx="1137" cy="115" r="34" fill="#C65D29"/>
+<text x="1137" y="122" text-anchor="middle" font-size="19" font-weight="700" fill="#fff">SC</text>
+<circle cx="1245" cy="223" r="34" fill="#C65D29"/>
+<text x="1245" y="230" text-anchor="middle" font-size="19" font-weight="700" fill="#fff">SC</text>
+<circle cx="1245" cy="377" r="34" fill="#C65D29"/>
+<text x="1245" y="384" text-anchor="middle" font-size="19" font-weight="700" fill="#fff">SC</text>
+<circle cx="1137" cy="485" r="34" fill="#C65D29"/>
+<text x="1137" y="492" text-anchor="middle" font-size="19" font-weight="700" fill="#fff">SC</text>
+<circle cx="983" cy="485" r="34" fill="#C65D29"/>
+<text x="983" y="492" text-anchor="middle" font-size="19" font-weight="700" fill="#fff">SC</text>
+<circle cx="875" cy="377" r="34" fill="#C65D29"/>
+<text x="875" y="384" text-anchor="middle" font-size="19" font-weight="700" fill="#fff">SC</text>
+<circle cx="875" cy="223" r="34" fill="#C65D29"/>
+<text x="875" y="230" text-anchor="middle" font-size="19" font-weight="700" fill="#fff">SC</text>
+<circle cx="983" cy="115" r="34" fill="#C65D29"/>
+<text x="983" y="122" text-anchor="middle" font-size="19" font-weight="700" fill="#fff">SC</text>
+<rect x="994" y="266" width="132" height="68" rx="10" fill="#1d232b"/>
+<line x1="1026" y1="266" x2="1018" y2="238" stroke="#1d232b" stroke-width="5" stroke-linecap="round"/>
+<line x1="1094" y1="266" x2="1102" y2="238" stroke="#1d232b" stroke-width="5" stroke-linecap="round"/>
+<text x="1060" y="308" text-anchor="middle" font-size="22" font-weight="700" fill="#fff">router</text>
+<text x="1060" y="368" text-anchor="middle" font-size="22" font-style="italic" fill="#C65D29">OSC</text>
+<text x="1060" y="596" text-anchor="middle" font-size="25" fill="#1d232b">wireless LAN · control only, audio made locally</text>
+<text x="1060" y="44" text-anchor="middle" font-size="40" font-weight="700" fill="#C65D29">MËSH</text>
+</svg>

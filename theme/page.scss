@@ -1,0 +1,23 @@
+/*-- scss:defaults --*/
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,600;0,700;1,400&family=IBM+Plex+Serif:ital,wght@0,400;1,400&family=IBM+Plex+Mono&display=swap');
+
+$primary: #C65D29;
+$body-color: #1d232b;
+$body-bg: #fbfaf7;
+$font-family-sans-serif: "IBM Plex Sans", Helvetica, Arial, sans-serif;
+$headings-font-family: "IBM Plex Sans", Helvetica, Arial, sans-serif;
+$font-family-monospace: "IBM Plex Mono", Menlo, monospace;
+$headings-font-weight: 700;
+$font-size-base: 1.06rem;
+$line-height-base: 1.65;
+
+/*-- scss:rules --*/
+h1.title { font-size: 2.6rem; letter-spacing: -0.015em; }
+.subtitle { color: #6e6e6e; }
+main h1 { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid #e3e0d8; }
+main h2 { margin-top: 2.2rem; }
+img.section-photo { width: 100%; max-height: 340px; object-fit: cover; border-radius: 6px; margin: .5rem 0 1rem; }
+main img { border-radius: 4px; }
+
+main a, .csl-entry { overflow-wrap: anywhere; }
+.tl-braces { margin-bottom: 1.2rem; }
