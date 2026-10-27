@@ -1,4 +1,25 @@
-# From SPRAWL to MËSH — talk (SMC 2026)
+# From SPRAWL to MËSH (SMC 2026)
+
+Presentation for the 2026 SMC: 
+
+- https://smc26.mbz.hr/
+ 
+ 
+ 
+full cite of SMC 2026 paper (Windish & von Coler). 
+ 
+ 
+ 
+Show the presentation as GH page: 
+
+- https://l42i.github.io/SMC_2026_Talk/
+
+
+
+
+---
+
+## Build Instructions
 
 One Markdown source, two outputs:
 
@@ -7,7 +28,7 @@ One Markdown source, two outputs:
 | Slides (reveal.js) | `_site/slides.html` | presenting (screen-share this window) |
 | Web page | `_site/index.html` | the link you post in the chat; reading afterwards |
 
-Built from the SMC 2026 paper (Windish & von Coler).
+
 
 ## Quick start
 
