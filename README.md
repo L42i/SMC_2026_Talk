@@ -1,20 +1,12 @@
-# From SPRAWL to MËSH (SMC 2026)
+# From SPRAWL to MËSH
 
-Presentation for the 2026 SMC: 
+## Presentation for the 2026 SMC  Paper
 
-- https://smc26.mbz.hr/
- 
- 
- 
-full cite of SMC 2026 paper (Windish & von Coler). 
- 
- 
- 
-Show the presentation as GH page: 
+*H. Windish and H. von Coler, “From SPRAWL to MËSH: Networked music systems for touring and stage integration,” in Proc. 23rd Sound and Music Computing Conf. (SMC 2026), Zagreb, Croatia, 2026*
 
-- https://l42i.github.io/SMC_2026_Talk/
+Show the presentation as GH page: https://l42i.github.io/SMC_2026_Talk/
 
-
+Conference website: https://smc26.mbz.hr/
 
 
 ---
