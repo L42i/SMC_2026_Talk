@@ -70,3 +70,16 @@ main .bignums b { font-size: 2.6rem; }
 
 /* small tag line used under slide titles */
 .kicker { color: var(--muted); font-style: italic; }
+
+/* Timeline as Quarto divs: unwrap the paragraph pandoc puts around the spans */
+.timeline .tl-item > p, .tl-braces > p { display: contents; }
+.tl-desc { display: block; }
+.tl-desc .citation a, .tl-desc a { color: inherit; font-weight: 600; }
+
+/* Full reference under the timeline */
+.tl-ref {
+  font-size: 18px; line-height: 1.4; color: #444; margin-top: 1.1em;
+  border-left: 4px solid var(--sprawl); padding: .2em 0 .2em .7em; text-align: left;
+}
+.tl-ref p { margin: 0; }
+main .tl-ref { font-size: .9rem; margin-bottom: 1.5rem; }

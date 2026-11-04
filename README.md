@@ -1,17 +1,4 @@
-# From SPRAWL to MËSH
-
-## Presentation for the 2026 SMC  Paper
-
-*H. Windish and H. von Coler, “From SPRAWL to MËSH: Networked music systems for touring and stage integration,” in Proc. 23rd Sound and Music Computing Conf. (SMC 2026), Zagreb, Croatia, 2026*
-
-**Show the presentation as GH page: https://l42i.github.io/SMC_2026_Talk/**
-
-Conference website: https://smc26.mbz.hr/
-
-
----
-
-## Build Instructions
+# From SPRAWL to MËSH — talk (SMC 2026)
 
 One Markdown source, two outputs:
 
@@ -20,7 +7,7 @@ One Markdown source, two outputs:
 | Slides (reveal.js) | `_site/slides.html` | presenting (screen-share this window) |
 | Web page | `_site/index.html` | the link you post in the chat; reading afterwards |
 
-
+Built from the SMC 2026 paper (Windish & von Coler).
 
 ## Quick start
 
@@ -33,7 +20,24 @@ make pdf                 # fallback PDF of the deck
 
 Requires [Quarto](https://quarto.org) ≥ 1.5 (tested with 1.6).
 
-## Writing conventions (all in `index.qmd`)
+## Structure
+
+`index.qmd` holds only the title block and one include per section:
+
+```
+sections/01-why.qmd          intro, problem, timeline, related work
+sections/02-sprawl.qmd       SPRAWL, SPRAWL V2, Goat Farm, SC Symposium
+sections/03-mesh.qmd         design goals, architecture, hardware, software
+sections/04-on-the-road.qmd  Kuala Lumpur, ICMC Hamburg
+sections/05-wrap-up.qmd      comparison, conclusions, thanks, references
+```
+
+Reorder or delete include lines to restructure the talk. Paths inside the
+section files (images, figures) are relative to the project root, because
+includes are pasted into `index.qmd` before rendering. Don't put HTML
+comments in `index.qmd` before the first section: they create an empty slide.
+
+## Writing conventions (in the section files)
 
 | You write | Slides | Page |
 |---|---|---|
@@ -51,10 +55,10 @@ This is handled by `filters/hybrid.lua`.
 
 ## Files
 
-
 ```
-index.qmd              the talk
-_timeline.qmd          HTML port of tikz/timeline.tex (steps in on slides, stacks on phones)
+index.qmd              title block + section includes
+sections/*.qmd         the talk, one file per section
+sections/_timeline.qmd HTML port of tikz/timeline.tex (steps in on slides, stacks on phones)
 _quarto.yml            formats, sizes, bibliography
 filters/hybrid.lua     prose → notes, slides-only / page-only, photo headings
 theme/slides.scss      deck theme (paper colours, big type for video calls)

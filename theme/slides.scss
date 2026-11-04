@@ -8,7 +8,7 @@ $mesh-orange: #C65D29;
 $ink:         #1d232b;
 $muted:       #6e6e6e;
 
-$body-bg:    #fbfaf7;
+$body-bg:    #ffffff;
 $body-color: $ink;
 $link-color: $mesh-orange;
 $presentation-heading-color: $ink;
@@ -51,6 +51,13 @@ $presentation-h1-font-size: 2.2em;
 
 // Full-bleed photo helper:  ![](x.jpg){.photo}
 .reveal img.photo { border-radius: 6px; box-shadow: 0 6px 24px rgba(0,0,0,.18); }
+.reveal img.scale-70 {
+  display: block;
+  width: 70%;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
 .reveal .caption, .reveal figcaption { font-size: 0.5em; color: $muted; }
 
 .reveal table { font-size: 0.82em; }
@@ -66,3 +73,5 @@ $presentation-h1-font-size: 2.2em;
 .reveal .timeline { font-size: 30px; margin-top: 1.4em; }
 .reveal .tl-braces { font-size: 26px; }
 .reveal .smaller-text { font-size: 0.8em; }
+
+.reveal .tl-ref { font-size: 24px; }
