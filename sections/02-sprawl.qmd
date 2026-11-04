@@ -1,0 +1,65 @@
+# SPRAWL V2: the wired predecessor {background-image="pictures/goat_farm.jpeg" background-opacity="0.45"}
+
+## SPRAWL → SPRAWL V2
+
+:::: {.columns}
+::: {.column width="50%"}
+**SPRAWL** (2019/20)
+
+- Central server: routing, mixing, spatialisation
+- Access points on a wired LAN
+- Control via OSC [@wright2003opensound]
+:::
+::: {.column width="50%" .fragment}
+**SPRAWL V2** (2023)
+
+- New hardware, **no central server**
+- Access points in a **ring**
+- Stable and low latency, but every link is a cable
+:::
+::::
+
+::: prose
+The original SPRAWL used a client–server architecture: a central server handled audio routing, mixing and spatialisation, and performers connected through access points on a wired LAN. Audio from each access point went to the server, was processed and redistributed to the other performers and the spatialisation system, while OSC handled control such as levels, routing and spatialisation. In 2023, SPRAWL V2 updated the hardware and removed the central server, connecting the access points in a ring. That is stable and low-latency, but it still depends on wired connections between all components.
+:::
+
+## Goat Farm Arts Center, Atlanta · Fall 2024
+
+:::: {.columns}
+::: {.column width="40%"}
+- **12** access points, one musician each
+- Student-built SPRAWL V2 programs
+  - spatialised granular synthesis
+  - graphic scores for audience and players
+- Some access points open to the audience
+:::
+::: {.column width="60%"}
+![A SPRAWL V2 access point: drum into microphone, interface, system.](pictures/goat_farm.jpeg){.photo .ph}
+:::
+::::
+
+::: prose
+In fall 2024 SPRAWL V2 was used at The Goat Farm Arts Center in Atlanta. Twelve access points were set up, each with a musician playing their own instrument into the system. The concert consisted of student-created programs ranging from real-time spatialised granular synthesis to a graphic score visible to audience and musicians. At the access point shown, the drum is picked up by a microphone into the audio interface and fed into the system; other access points let the audience play along.
+:::
+
+## SuperCollider Symposium, DC · Spring 2025
+
+:::: {.columns}
+::: {.column width="55%"}
+![Workshop at the SuperCollider Symposium.](pictures/scsymp_workshop.jpg){.photo .ph}
+:::
+::: {.column width="45%"}
+- Workshop: techniques for distributed systems
+- Ring topology; attendees designed the processing for their access point
+- **4 access points**
+- **10-hour drive** in a midsize car
+
+::: {.fragment}
+→ this is what we set out to fix
+:::
+:::
+::::
+
+::: prose
+After being taught in the classroom in fall 2024, SPRAWL V2 went to Washington, DC in spring 2025 for a workshop at the SuperCollider Symposium. The workshop covered techniques for working with SPRAWL V2 and, more generally, with distributed performance systems; attendees designed the audio processing for their own access point in the ring. Bringing just four access points meant a ten-hour drive from Atlanta in a midsize vehicle. That trip motivated MËSH.
+:::

@@ -1,0 +1,48 @@
+# Wrapping up
+
+## SPRAWL V2 vs. MËSH
+
+| | SPRAWL V2 | MËSH |
+|---|---|---|
+| Network | Wired Ethernet, ring | Dedicated wireless LAN |
+| Between units | Audio + control | Control only (OSC) |
+| Sound generation | Over the network | Locally on each node |
+| Deployment | Per access point | Ansible playbook for all nodes |
+| On the road | 4 access points, 10 h by car | 8 nodes in 3 cases, checked luggage |
+
+::: prose
+Compared with SPRAWL V2, MËSH trades networked audio for local synthesis and wireless control. In return it fits in checked luggage, sets up in two hours with two people, and places nodes wherever the space suggests.
+:::
+
+## Conclusions & next steps
+
+- Self-contained nodes + wireless OSC + Ansible = **minimal infrastructure**
+- Proven abroad twice: installation, ensemble performance, workshop
+- Suited to touring, site-specific work, participatory installations
+
+::: {.fragment}
+**Next**
+
+- Wireless **audio streaming** between nodes
+- **Laptop nodes** instead of Raspberry Pis
+:::
+
+::: prose
+By distributing computation, sound generation and control across self-contained nodes, MËSH gives a scalable, spatially flexible performance environment without central infrastructure or extensive cabling. Wireless communication, OSC control and automated deployment with Ansible cut setup time while keeping the expressive range of distributed electroacoustic performance. The deployments in Kuala Lumpur and Hamburg showed the system can be transported, configured and run in new environments with little logistical overhead, for both installations and ensemble performance. Next, we will explore wireless audio streaming between nodes and look at moving from Raspberry Pi to laptop nodes to generalise the hardware. More broadly, MËSH points toward lightweight, decentralised approaches in electroacoustic music systems.
+:::
+
+## Thank you {.center}
+
+**Henry Windish · Henrik von Coler**<br>
+Georgia Institute of Technology
+
+[github.com/L42i/MËSH](https://github.com/L42i/MËSH)
+
+::: slides-only
+Slides and full text: *add your published URL here*
+:::
+
+## References {.smaller-text .scrollable}
+
+::: {#refs}
+:::

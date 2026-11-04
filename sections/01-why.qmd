@@ -1,0 +1,96 @@
+# The Origins {background-image="pictures/sprawl_chris_2.jpg" background-opacity="0.45"}
+
+
+
+
+## Hub Mode
+
+
+![SPRAWL's hub architecture.](pictures/SPRAWL-server-access-point-architecture.png){.photo .scale-20 fig-alt="SPRAWL's hub architecture."}
+
+* JackTrip to connect multiple Access Points to a server
+* spatialization, mixing, ........
+
+
+# Enhanced Local Interaction 
+
+
+
+![Setup on three stories.](pictures/silent-green-0.png)
+
+ 
+
+## Distributed systems open up the ensemble {background-image="pictures/silent_green_2020.webp" background-opacity="0.45"}
+
+:::: {.columns}
+::: {.column width="55%"}
+- Sound comes **from the space**, not from a PA
+- Richer interaction between performers
+- Scores and instructions sent in **real time**
+- The audience can take part
+:::
+::: {.column width="45%"}
+:::
+::::
+
+::: prose
+Distributed music systems change how sound, control and interaction are organised across performers and spaces. The first advantage is physical: a distributed ensemble adapts to the space and allows configurations a classic PA cannot produce. It also widens the range of interaction between musicians, supports real-time distribution of scores and performance instructions for adaptive or algorithmic compositions, and opens the door to audience participation, turning listeners into contributors.
+:::
+
+## The catch: infrastructure
+
+
+![Caption for Image 2](pictures/silent_green_2020.webp)
+:::
+
+
+- Central servers, multichannel routing, networking between all performers
+- **Wired** Ethernet: reliable and low-latency, but…
+  - cabling grows with ensemble size
+  - cables pin performers in place
+  - setup in unfamiliar venues takes long
+- Result: fewer rehearsals, harder touring
+
+::: prose
+These systems usually need complex infrastructure. Setup time is substantial, and transporting and configuring specialised equipment limits rehearsal, touring and performance in varied venues. Wired networking is a particular constraint: Ethernet gives reliable, low-latency communication, but cabling grows with the ensemble, constrains where performers can stand, and complicates setup in temporary spaces.
+
+MËSH is our answer: a portable ensemble system built around a wireless LAN and a streamlined, automated setup workflow.
+:::
+
+## From SPRAWL to MËSH
+
+![](pictures/two_nodes.jpg){.photo .ph fig-alt="Two MËSH nodes with touchscreens"}
+
+
+::: column-page
+{{< include sections/_timeline.qmd >}}
+:::
+
+::: prose
+The path covered in this talk: from the original, server-based SPRAWL [@voncoler2020sprawl], through the ring-based SPRAWL V2 and two deployments that exposed its touring overhead, to the wireless MËSH system and its first two international deployments.
+:::
+
+## Related work
+
+:::: {.columns .smaller-text}
+::: {.column width="50%"}
+**Networked ensembles**
+
+- The Hub, 1980s–90s [@HUBintro]
+- PLOrk, SLOrk: laptop + speaker meta-instruments [@PLorkYear1; @slork]
+- L2Ork: open source, flexible setups [@nime2010_Bukvic_linux]
+- HELO: heterogeneous hardware and software [@helo]
+:::
+::: {.column width="50%"}
+**Networked music performance**
+
+- Latency and synchronisation [@rottondiNMP; @chafe2010effect]
+- JackTrip: uncompressed audio streaming [@caceres2010jacktrip]
+- Telematic performance as a medium [@telematic]
+- Internet of Musical Things [@turchet2018iomust]
+:::
+::::
+
+::: prose
+The Hub pioneered real-time exchange of control data between networked performers. Laptop orchestras such as PLOrk and SLOrk standardised "meta-instruments" of laptop, speaker and controller; L2Ork extended the model with open-source software and flexible configurations, while HELO embraced heterogeneous hardware and software. Networked music performance research has focused on latency, synchronisation and audio quality, with JackTrip widely used for uncompressed streaming, and artistic work treating telematic constraints as compositional material. Work on wireless installations and the Internet of Musical Things points toward low-cost, decentralised devices, which is the direction MËSH takes: portability, minimal infrastructure and adaptable deployment.
+:::

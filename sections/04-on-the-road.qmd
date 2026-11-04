@@ -1,0 +1,86 @@
+# On the road {background-image="pictures/mesh_in_cases.jpeg" background-opacity="0.35"}
+
+## Kuala Lumpur · Fall 2025
+
+:::: {.columns}
+::: {.column width="40%"}
+![The complete system in cases.](pictures/mesh_in_cases.jpeg){.photo .ph}
+:::
+::: {.column width="60%"}
+Convergence Innovation Competition Asia
+
+::: {.bignums}
+<div><b>8</b><span>nodes</span></div>
+<div><b>3</b><span>road cases</span></div>
+<div><b>2</b><span>people</span></div>
+<div><b>2 h</b><span>setup + soundcheck</span></div>
+:::
+
+- Flown as standard checked luggage
+- Only the speakers came from the venue
+- Setup fully automated with Ansible
+:::
+::::
+
+::: prose
+In fall 2025 MËSH was presented at the Convergence Innovation Competition Asia in Kuala Lumpur, a practical test of portability, setup and flexibility. An eight-node system travelled as standard checked luggage, with all node and networking equipment in three Gator road cases. Everything fit except the speakers, which the venue supplied. That is a significant reduction in logistics compared with SPRAWL. On site, setup meant powering the router and nodes, bringing up the wireless network and initialising audio and control, all automated with Ansible. Two people set up and soundchecked the system in two hours.
+:::
+
+## Kuala Lumpur: installation
+
+:::: {.columns}
+::: {.column width="45%"}
+![Node layout in Kuala Lumpur.](pictures/past_layout.png){.photo .ph}
+:::
+::: {.column width="55%"}
+- A camera at every node
+- OpenCV: total pixel motion as a proxy for movement
+- Shared over OSC → SuperCollider sound field
+- Screens show the motion field back to visitors
+
+![](pictures/single_pi_screen_screenshot.png){.photo fig-alt="Motion visualisation on a node screen" style="max-height:230px; width:auto"}
+:::
+::::
+
+::: prose
+Without cables, nodes could be placed freely through the space. In installation mode, visitors interacted through a camera at each node. A Python/OpenCV script tracked total pixel movement as a proxy for people moving through the room; each node's data was shared over OSC and used as control data for a SuperCollider sound field. Each touchscreen showed the direction every pixel moved between frames, inviting visitors to find out how their active and passive movement changed the sound field.
+:::
+
+## Kuala Lumpur: performance
+
+:::: {.columns}
+::: {.column width="58%"}
+![Dr. Ahmad Daudzi Musib performing with MËSH.](pictures/image_of_musician.jpg){.photo .ph}
+:::
+::: {.column width="42%"}
+- Graphic score [*DISCOUNT*](https://hvc.berlin/discount/) deployed to all nodes via Ansible
+- Players read the score on their node
+- Video nodes show it to the audience
+- Performers spread through the room
+:::
+::::
+
+::: prose
+In performance mode, MËSH supported a networked ensemble in which performers controlled their own audio streams. The graphic score *DISCOUNT* was deployed to all nodes simultaneously with Ansible: musicians read it on the touchscreen at their node while the video nodes displayed it for the audience. Wireless connectivity let performers, and the sound, fill the room.
+:::
+
+## ICMC Hamburg · Spring 2026
+
+:::: {.columns}
+::: {.column width="50%"}
+![Workshop](pictures/icmc_workshop.jpg){.photo .ph style="max-height:300px"}
+
+![Installation](pictures/icmc_installation.jpg){.photo .ph style="max-height:300px"}
+:::
+::: {.column width="50%"}
+- Again: 3 cases, venue speakers, **2 people · 2 h**
+- **Workshop** (1 h): four guided demos with prediction tasks and discussion
+- **Installation**: reworked sound design, lighter visuals
+  - ran autonomously for **8 hours**
+  - ~**100** visitors
+:::
+::::
+
+::: prose
+For the International Computer Music Conference in Hamburg in spring 2026 the system again travelled in three road cases, with speakers provided by the conference, and again took two people two hours to set up and soundcheck in an unfamiliar venue. The one-hour workshop introduced participants to MËSH hands-on: four guided demonstrations, each paired with prediction activities, discussion and exercises on system behaviour, use cases and trade-offs, ending with a discussion of how MËSH-type systems could fit participants' own work. The installation reworked the Kuala Lumpur piece with new sound design and more efficient visuals; it ran autonomously for eight hours and was visited by roughly 100 members of the ICMC community.
+:::

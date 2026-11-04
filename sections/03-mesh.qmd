@@ -1,0 +1,60 @@
+# The MËSH system {background-image="pictures/mesh_build_in_progress.jpg" background-opacity="0.45"}
+
+## Design goals
+
+- **Portable**: compact, self-contained nodes
+- **Wireless**: no audio or Ethernet runs between nodes
+- **Decentralised**: every node is an independent sound source *and* part of the whole
+- **Fast to deploy**: one automated workflow for every venue
+
+::: prose
+MËSH is a distributed performance infrastructure that puts portability, efficiency and flexibility first without giving up expressive range. Each node integrates computation, audio I/O and control in one unit, avoiding racks and central equipment. Instead of analog or digital audio runs, nodes communicate over a network, which makes setup simpler and lets nodes go almost anywhere: unconventional stage layouts, audience-distributed configurations or site-specific installations.
+:::
+
+## Architecture: control travels, audio stays local
+
+![](figures/topology.svg){width="100%" fig-alt="Left: SPRAWL V2 access points wired in a ring carrying audio and control. Right: eight MËSH nodes connected wirelessly to a central router, exchanging OSC control data only."}
+
+::: prose
+MËSH runs on a dedicated wireless network. Each node is both an independent sound source and part of a coordinated system. Control data (timing, parameter changes, interaction events) is sent as OSC. The current implementation does **not** stream audio between nodes: each node generates and processes sound locally. This keeps bandwidth low, simplifies network configuration and makes the system robust on Wi-Fi, where low-latency, high-quality audio streams are hard to maintain. Audio streaming is a topic for future versions.
+:::
+
+## Hardware: one node
+
+:::: {.columns}
+::: {.column width="45%"}
+![](pictures/one_node_equipment.jpg){.photo .ph fig-alt="Hardware for one MËSH node"}
+:::
+::: {.column width="55%"}
+- Raspberry Pi 5
+- 10.1″ ROADOM touchscreen
+- Focusrite Scarlett 2i2
+- EMEET C960 webcam (installations)
+- Powered speaker, supplied by the venue
+- One dedicated router for all nodes
+
+::: {.fragment}
+**Video nodes**: Beelink S12 Mini, Ubuntu 24.04. OSC in, generative visuals (Processing) and graphic scores out.
+:::
+:::
+::::
+
+::: prose
+Each node is built around a Raspberry Pi 5 with a 10.1-inch ROADOM touchscreen for local control and visualisation and a Focusrite Scarlett 2i2 audio interface. All nodes are networked through one dedicated router; a powered loudspeaker, usually supplied by the venue, sits with each node. For installations, EMEET C960 webcams at each node enable audience interaction. Video nodes are Beelink S12 Mini PCs running Ubuntu 24.04 LTS on the same network: they receive OSC and turn it into generative visuals, often in Processing, and also display graphic scores.
+:::
+
+## Software
+
+- Debian 13 "Trixie" on every node
+- **SuperCollider** per node: local synthesis, networked control
+- **OSC** between nodes
+- **OpenCV** + webcam for audience interaction [@opencv_library]
+- **Ansible** for deployment [@ansible]
+
+::: {.fragment}
+> A piece is an Ansible playbook:<br>one command configures every audio and video node.
+:::
+
+::: prose
+All nodes run Debian 13 "Trixie". SuperCollider runs independently on each node, so audio is generated locally while the node responds to networked control messages over OSC. OpenCV analyses webcam video in real time; the results can be mapped to musical parameters or drive visuals on the video nodes. Deployment and maintenance are automated with Ansible: configuration, updates and system management happen on all nodes at once, and pieces and installations are themselves Ansible playbooks that configure every node in one step. This keeps the system consistent and setup short.
+:::
