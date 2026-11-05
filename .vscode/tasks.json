@@ -1,0 +1,23 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Preview slides",
+      "type": "shell",
+      "command": "make preview",
+      "isBackground": true,
+      "problemMatcher": [],
+      "presentation": { "panel": "dedicated", "group": "preview" },
+      "runOptions": { "instanceLimit": 1 }
+    },
+    {
+      "label": "Preview page",
+      "type": "shell",
+      "command": "make page",
+      "isBackground": true,
+      "problemMatcher": [],
+      "presentation": { "panel": "dedicated", "group": "preview" },
+      "runOptions": { "instanceLimit": 1 }
+    }
+  ]
+}

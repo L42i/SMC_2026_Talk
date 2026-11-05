@@ -4,3 +4,5 @@ index_files/
 *.pdf
 
 /.quarto/
+
+**/*.quarto_ipynb
