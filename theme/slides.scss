@@ -143,7 +143,7 @@ $presentation-h1-font-size: 1.93em;     // = 58px
 .reveal .carousel .cs-stage { position: relative; width: 100%; aspect-ratio: 16 / 9; background: #111; border-radius: 12px; overflow: hidden; box-shadow: 0 6px 24px rgba(0,0,0,.25); }
 .reveal .carousel .cs-item { position: absolute; inset: 0; }
 .reveal .carousel .cs-item img, .reveal .carousel .cs-item iframe { display: block; width: 100%; height: 100%; max-width: none; max-height: none; margin: 0; border: 0; border-radius: 0; box-shadow: none; object-fit: contain; background: #111; }
-.reveal .carousel .cs-cap { position: absolute; left: 50%; bottom: 14px; transform: translateX(-50%); white-space: nowrap; font-size: 17px; color: $ink; background: rgba(255,255,255,.9); border-radius: 6px; padding: .2em .7em; }
+.reveal .carousel .cs-cap { position: absolute; left: 50%; bottom: 14px; transform: translateX(-50%); white-space: normal; max-width: 92%; text-align: center; font-size: 17px; color: $ink; background: rgba(255,255,255,.9); border-radius: 6px; padding: .2em .7em; }
 .reveal .carousel .cs-btn { position: absolute; top: calc(50% - 26px); width: 52px; height: 52px; border: 0; border-radius: 50%; background: rgba(255,255,255,.85); color: $ink; font-size: 36px; line-height: 1; cursor: pointer; z-index: 5; display: flex; align-items: center; justify-content: center; padding: 0 0 4px; }
 .reveal .carousel .cs-btn:hover { background: #fff; }
 .reveal .carousel .cs-prev { left: 12px; }
@@ -160,3 +160,25 @@ $presentation-h1-font-size: 1.93em;     // = 58px
 .reveal .box { border: 3px solid $v2-teal; border-radius: 12px; background: #eef1f4; padding: .3em 1em .5em; margin-top: .8em; }
 .reveal .box ul { margin-bottom: .3em; }
 .reveal .box > p:last-child { margin-bottom: 0; }
+.reveal img.maxh-560 { max-height: 560px; width: auto; }
+
+// Dense two-part column: tighter bullets, headings with space above them
+.reveal .tight li { margin-bottom: 0; }
+.reveal .tight p { margin: .3em 0 .2em; }
+.reveal .tight blockquote { margin: .5em 0 0; }
+.reveal .tight .sw-head { margin-top: .4em; }
+.reveal .tight .sw-head p { margin: 0 0 .15em; }
+
+// Both columns centred vertically between title and footer; square carousel variant
+.reveal .mid-all { display: flex; min-height: 760px; align-items: center; }
+.reveal .carousel.cs-sq { width: 80%; }
+.reveal .carousel.cs-sq .cs-stage { aspect-ratio: 1 / 1; }
+.reveal .box.box-mesh { border-color: $mesh-orange; }
+.reveal .tight .box { padding: .1em .8em .15em; margin-top: .4em; }
+.reveal .tight .box .sw-head { margin-top: 0; }
+
+// Two columns where the right one keeps its text on top and a figure at the bottom
+.reveal .split-cols { display: flex; min-height: 720px; }
+.reveal .split-cols > .column:last-child { display: flex; flex-direction: column; justify-content: flex-start; }
+.reveal .mesh-fig { display: block; max-height: 330px; width: auto; max-width: 100%; margin: 0 0 0 auto; border-radius: 0; box-shadow: none; }
+.reveal .v2-fig { display: block; max-height: 270px; width: auto; max-width: 100%; margin: .5em 0 0 auto; border-radius: 0; box-shadow: none; }

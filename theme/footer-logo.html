@@ -3,20 +3,20 @@
   document.querySelectorAll(".reveal .footer img[data-src]").forEach(function (i) { i.src = i.dataset.src; });
 </script>
 <script>
-  // Goat Farm carousel: items are fragments, so Right/Left already step through them.
-  // This syncs the dots, wires the buttons and pauses the video when it is not showing.
+  // Carousels: items are fragments, so Right/Left already step through them.
+  // This syncs the dots, wires the buttons and pauses a video when it is not showing.
   (function () {
-    function init() {
-      var root = document.querySelector(".reveal .carousel");
-      if (!root || !window.Reveal) return;
+    function setup(root) {
       var dots = root.querySelectorAll(".cs-dot");
       var frame = root.querySelector("iframe");
+      var slide = root.closest("section");
       var n = dots.length;
+      function active() { return Reveal.getCurrentSlide() === slide; }
       function current() { var f = Reveal.getIndices().f; return (f === undefined ? -1 : f) + 1; }
       function sync() {
-        var c = Math.max(0, Math.min(n - 1, current()));
+        var c = active() ? Math.max(0, Math.min(n - 1, current())) : 0;
         dots.forEach(function (d, i) { d.classList.toggle("on", i === c); });
-        if (frame && c !== n - 1 && frame.contentWindow) {
+        if (frame && frame.contentWindow && (!active() || c !== n - 1)) {
           frame.contentWindow.postMessage(JSON.stringify({ event: "command", func: "pauseVideo", args: "" }), "*");
         }
       }
@@ -26,6 +26,7 @@
       ["fragmentshown", "fragmenthidden", "slidechanged"].forEach(function (e) { Reveal.on(e, function () { setTimeout(sync, 0); }); });
       sync();
     }
+    function init() { document.querySelectorAll(".reveal .carousel").forEach(setup); }
     if (window.Reveal && Reveal.isReady && Reveal.isReady()) init(); else if (window.Reveal) Reveal.on("ready", init); else window.addEventListener("load", function () { Reveal.on("ready", init); });
   })();
 </script>
