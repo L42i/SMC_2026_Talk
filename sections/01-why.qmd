@@ -83,14 +83,18 @@ Concert: Hub Mode at Silent Green, Berlin, Feb 2020
 Distributed music systems change how sound, control and interaction are organised across performers and spaces. The first advantage is physical: a distributed ensemble adapts to the space and allows configurations a classic PA cannot produce. It also widens the range of interaction between musicians, supports real-time distribution of scores and performance instructions for adaptive or algorithmic compositions, and opens the door to audience participation, turning listeners into contributors.
 :::
 
-## The catch: infrastructure
+## SPRAWL I: Touch Interface
 
-- Central servers, multichannel routing, networking between all performers
-- **Wired** Ethernet: reliable and low-latency, but…
-  - cabling grows with ensemble size
-  - cables pin performers in place
-  - setup in unfamiliar venues takes long
-- Result: fewer rehearsals, harder touring
+::: {.overlap-stage}
+::: {.stage-a}
+![Access point in use with a modular system at TU Studio.](pictures/sprawl_access_point_tu_studio.webp){.photo fig-alt="Access point with a touch screen next to an audio interface, keyboard and modular synthesizer"}
+:::
+::: {.stage-b .fragment}
+![Access point GUI for monitoring and 2D spatialization [@voncoler2020sprawl].](pictures/sprawl_gui_fig4.png){.photo fig-alt="Touch GUI of the generic access point software: monitor buttons, gain and binaural faders and an XY position pad"}
+:::
+:::
+
+# From SPRAWL to ... {background-image="pictures/section_projection.webp" background-size="cover" background-color="#000" background-opacity="0.85"}
 
 ::: prose
 These systems usually need complex infrastructure. Setup time is substantial, and transporting and configuring specialised equipment limits rehearsal, touring and performance in varied venues. Wired networking is a particular constraint: Ethernet gives reliable, low-latency communication, but cabling grows with the ensemble, constrains where performers can stand, and complicates setup in temporary spaces.
