@@ -1,6 +1,6 @@
 /* Shared by slides and page. Timeline + big-number blocks. */
 :root {
-  --sprawl: #2B4C7E; --teal: #1F7C78; --mesh: #C65D29;
+  --sprawl: #f5c211; --teal: #2ec27e; --mesh: #9141ac; --panel: #eef1f4;
   --muted: #6e6e6e; --ink: #1d232b;
 }
 
@@ -24,9 +24,9 @@
   height: var(--tab-h); width: 100%; box-sizing: border-box;
   display: flex; align-items: center; justify-content: center; text-align: center;
   font-weight: 700; border-radius: 4px; padding: 0 .4em; font-size: .92em; line-height: 1.15;
-  border: 2px solid var(--c); color: var(--c); background: #fff;
+  border: 3px solid var(--c); color: var(--ink); background: #fff;
 }
-.tl-tab.system { background: var(--c); color: #fff; }
+.tl-tab.system { background: var(--c); color: var(--on-c, var(--ink)); }
 .tl-dot { height: var(--dot-row); display: flex; align-items: center; }
 .tl-dot::before {
   content: ""; width: 1.05em; height: 1.05em; border-radius: 50%;
@@ -35,16 +35,16 @@
 }
 .tl-item.event .tl-dot::before { width: .75em; height: .75em; }
 .tl-desc {
-  font-size: .78em; color: #333; background: color-mix(in srgb, var(--c) 9%, white);
+  font-size: .78em; color: #333; background: var(--panel); border-top: 3px solid var(--c);
   border-radius: 4px; padding: .5em .6em; width: 100%; box-sizing: border-box;
 }
 .tl-item.sprawl { --c: var(--sprawl); }
 .tl-item.teal   { --c: var(--teal); }
-.tl-item.mesh   { --c: var(--mesh); }
+.tl-item.mesh   { --c: var(--mesh); --on-c: #fff; }
 .tl-braces { display: grid; grid-template-columns: 4fr 2fr; gap: .6em; font-size: 20px; font-weight: 700; margin-top: .3em; }
-.tl-braces span { border-top: 3px solid; padding-top: .25em; text-align: center; }
-.tl-braces .wired { color: var(--teal); }
-.tl-braces .wireless { color: var(--mesh); }
+.tl-braces span { border-top: 3px solid; padding-top: .25em; text-align: center; color: var(--ink); }
+.tl-braces .wired { border-top-color: var(--teal); }
+.tl-braces .wireless { border-top-color: var(--mesh); }
 
 @media (max-width: 820px) {   /* page view on phones: vertical timeline */
   .timeline { grid-template-columns: 1fr; gap: .8em; font-size: 16px; }

@@ -1,10 +1,10 @@
 /*-- scss:defaults --*/
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
 
 // Paper palette (from tikz/timeline.tex)
-$sprawl-blue: #2B4C7E;
-$v2-teal:     #1F7C78;
-$mesh-orange: #C65D29;
+$sprawl-blue: #f5c211;
+$v2-teal:     #2ec27e;
+$mesh-orange: #9141ac;
 $ink:         #1d232b;
 $muted:       #6e6e6e;
 
@@ -12,17 +12,17 @@ $body-bg:    #ffffff;
 $body-color: $ink;
 $link-color: $mesh-orange;
 $presentation-heading-color: $ink;
-$presentation-heading-font: "IBM Plex Sans", Helvetica, Arial, sans-serif;
+$presentation-heading-font: "IBM Plex Mono", Menlo, monospace;
 $presentation-heading-font-weight: 700;
 $presentation-heading-text-transform: none;
 $presentation-heading-letter-spacing: -0.01em;
-$font-family-sans-serif: "IBM Plex Sans", Helvetica, Arial, sans-serif;
+$font-family-sans-serif: "IBM Plex Mono", Menlo, monospace;
 $font-family-monospace: "IBM Plex Mono", Menlo, monospace;
 
 // Large type: the deck is watched through a video call
-$presentation-font-size-root: 44px;
-$presentation-h2-font-size: 1.45em;
-$presentation-h1-font-size: 2.2em;
+$presentation-font-size-root: 34px;
+$presentation-h2-font-size: 1.15em;
+$presentation-h1-font-size: 1.7em;
 
 /*-- scss:rules --*/
 .reveal .slide-number,
@@ -39,8 +39,8 @@ $presentation-h1-font-size: 2.2em;
 .reveal strong { color: $mesh-orange; }
 
 // Title slide
-.reveal .quarto-title-block .title { font-size: 2.4em; line-height: 1.05; }
-.reveal .quarto-title-block .subtitle { color: $muted; font-size: 1.05em; }
+.reveal .quarto-title-block .title { font-size: 1.9em; line-height: 1.05; }
+.reveal .quarto-title-block .subtitle { color: $muted; font-size: 0.78em; }
 .reveal .quarto-title-authors { font-size: 0.8em; }
 
 // Section dividers with photo backgrounds: keep text legible over photos
@@ -58,7 +58,7 @@ $presentation-h1-font-size: 2.2em;
   height: auto;
   margin: 0 auto;
 }
-.reveal .caption, .reveal figcaption { font-size: 0.5em; color: $muted; }
+.reveal .caption, .reveal figcaption { font-size: 0.5em; color: $muted; text-align: center; }
 
 .reveal table { font-size: 0.82em; }
 .reveal table th { border-bottom: 3px solid $ink; }
@@ -75,3 +75,36 @@ $presentation-h1-font-size: 2.2em;
 .reveal .smaller-text { font-size: 0.8em; }
 
 .reveal .tl-ref { font-size: 24px; }
+
+// Footer: lab name centred in the left half, L42i badge in the middle, talk title centred in the right half.
+// Quarto sets a fixed px size on .footer later in the cascade, hence !important.
+// Side padding keeps it clear of the menu button and the slide number.
+.reveal .footer, .reveal .footer p { font-size: 14px !important; }
+.reveal .footer { padding: 0 6em; box-sizing: border-box; }
+.reveal .footer p { margin: 0; display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 1.2em; }
+.reveal .footer .f-left { text-align: center; }
+.reveal .footer .f-right { text-align: center; }
+.reveal .footer img.l42i-logo { height: 2.4em; width: auto; margin: 0; border-radius: 2px; box-shadow: none; }
+.reveal .slide-number { font-size: 14px !important; }
+
+// References: two dense columns so the whole list fits on one slide
+.reveal .references-slide #refs { font-size: 0.82em; column-count: 2; column-gap: 1.5em; line-height: 1.25; }
+.reveal .references-slide .csl-entry { break-inside: avoid; margin-bottom: 0.4em; }
+
+// Timeline: always horizontal on slides. components.css turns it vertical below
+// 820px window width (meant for phones on the web page); slides scale, so undo that here.
+.reveal .timeline { grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 0 .6em; }
+.reveal .timeline::before { display: block; }
+.reveal .timeline .tl-item { align-items: center; border-left: 0; padding-left: 0; }
+.reveal .timeline .tl-date { height: var(--date-h); }
+.reveal .timeline .tl-tab { height: var(--tab-h); justify-content: center; padding: 0 .4em; }
+.reveal .timeline .tl-dot { display: flex; height: var(--dot-row); }
+.reveal .tl-braces { display: grid; }
+
+// Image height caps as classes: a style= attribute on a captioned image lands on the wrapper div, not the img.
+.reveal img.maxh-400 { max-height: 400px; }
+.reveal img.maxh-195 { max-height: 195px; }
+.reveal img.maxh-260 { max-height: 260px; width: auto; }
+.reveal img.maxh-420 { max-height: 420px; }
+// Two images of identical size side by side (diagram letterboxes on white, photo fills)
+.reveal img.pair-img { display: block; width: 600px; height: 400px; max-width: 100%; max-height: none; object-fit: contain; margin: 0 auto; background: #fff; }

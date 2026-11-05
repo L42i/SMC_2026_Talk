@@ -1,0 +1,4 @@
+<script>
+  // Reveal lazy-loads via data-src, but the footer is outside the slides: load it ourselves.
+  document.querySelectorAll(".reveal .footer img[data-src]").forEach(function (i) { i.src = i.dataset.src; });
+</script>
