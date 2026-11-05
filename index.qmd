@@ -13,6 +13,9 @@ abstract: |
   self-contained nodes that share control data over OSC. This page is the
   companion to the talk: the same material as the slides, with the spoken
   part written out.
+# sources from the removed "Related work" slide: listed in the references, not cited on a slide
+nocite: |
+  @HUBintro, @PLorkYear1, @slork, @nime2010_Bukvic_linux, @helo, @rottondiNMP, @chafe2010effect, @caceres2010jacktrip, @telematic, @turchet2018iomust
 ---
 
 {{< include sections/01-why.qmd >}}

@@ -94,7 +94,7 @@ Distributed music systems change how sound, control and interaction are organise
 :::
 :::
 
-# From SPRAWL to ... {background-image="pictures/section_projection.webp" background-size="cover" background-color="#000" background-opacity="0.85"}
+# From SPRAWL to MËSH {background-image="pictures/section_projection.webp" background-size="cover" background-color="#000" background-opacity="0.85"}
 
 ::: prose
 These systems usually need complex infrastructure. Setup time is substantial, and transporting and configuring specialised equipment limits rehearsal, touring and performance in varied venues. Wired networking is a particular constraint: Ethernet gives reliable, low-latency communication, but cabling grows with the ensemble, constrains where performers can stand, and complicates setup in temporary spaces.
@@ -102,7 +102,7 @@ These systems usually need complex infrastructure. Setup time is substantial, an
 MËSH is our answer: a portable ensemble system built around a wireless LAN and a streamlined, automated setup workflow.
 :::
 
-## From SPRAWL to MËSH
+## The Timeline
 
 ::: column-page
 {{< include sections/_timeline.qmd >}}
@@ -112,27 +112,3 @@ MËSH is our answer: a portable ensemble system built around a wireless LAN and 
 The path covered in this talk: from the original, server-based SPRAWL [@voncoler2020sprawl], through the ring-based SPRAWL V2 and two deployments that exposed its touring overhead, to the wireless MËSH system and its first two international deployments.
 :::
 
-## Related work
-
-:::: {.columns .smaller-text}
-::: {.column width="50%"}
-**Networked ensembles**
-
-- The Hub, 1980s–90s [@HUBintro]
-- PLOrk, SLOrk: laptop + speaker meta-instruments [@PLorkYear1; @slork]
-- L2Ork: open source, flexible setups [@nime2010_Bukvic_linux]
-- HELO: heterogeneous hardware and software [@helo]
-:::
-::: {.column width="50%"}
-**Networked music performance**
-
-- Latency and synchronisation [@rottondiNMP; @chafe2010effect]
-- JackTrip: uncompressed audio streaming [@caceres2010jacktrip]
-- Telematic performance as a medium [@telematic]
-- Internet of Musical Things [@turchet2018iomust]
-:::
-::::
-
-::: prose
-The Hub pioneered real-time exchange of control data between networked performers. Laptop orchestras such as PLOrk and SLOrk standardised "meta-instruments" of laptop, speaker and controller; L2Ork extended the model with open-source software and flexible configurations, while HELO embraced heterogeneous hardware and software. Networked music performance research has focused on latency, synchronisation and audio quality, with JackTrip widely used for uncompressed streaming, and artistic work treating telematic constraints as compositional material. Work on wireless installations and the Internet of Musical Things points toward low-cost, decentralised devices, which is the direction MËSH takes: portability, minimal infrastructure and adaptable deployment.
-:::
