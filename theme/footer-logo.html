@@ -33,3 +33,14 @@
     if (window.Reveal && Reveal.isReady && Reveal.isReady()) init(); else if (window.Reveal) Reveal.on("ready", init); else window.addEventListener("load", function () { Reveal.on("ready", init); });
   })();
 </script>
+
+<script>
+// external links open in a new tab
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll("a[href]").forEach(function (a) {
+    if (a.hostname && a.hostname !== location.hostname && /^https?:$/.test(a.protocol)) {
+      a.target = "_blank"; a.rel = "noopener noreferrer";
+    }
+  });
+});
+</script>
