@@ -14,16 +14,19 @@
 :::
 :::
 ::: {.column width="54%"}
-- **Electronic Orchestra Charlottenburg**<sup>1</sup>: live electronics with 8-12 modular synts on immersive loudspeaker systems
-- Fully **analog** connections 
+**Electronic Orchestra Charlottenburg**<sup>1</sup>
+
+- Live electronics with 8-12 modular synts on immersive loudspeaker systems
+- Fully analog connections 
 - Ddigital mixer and processing
-- One person routes, mixes and **directs the sound** of everyone, in real time
+- Sound director, mixes and spatializes everyone, in real time
 
 ---
 
 ::: {.fragment}
-**Motivation:** move routing and mixing into the network.
+**Motivation** 
 
+- Move routing and mixing into the network
 - Reduce audio cables and hardware
 - Allow for enhanced interaction
 
@@ -41,37 +44,36 @@ The idea for a different kind of system came out of playing in the [Electronic O
 :::: {.columns}
 ::: {.column width="50%"}
 ![SPRAWL's hub architecture.](pictures/SPRAWL-server-access-point-architecture.png){.photo .pair-img fig-alt="SPRAWL's hub architecture."}
+
+* Hub server for mixing and rendering
+* Access Points for musicians
+* JackTrip for audio routing
+
 :::
-::: {.column width="50%"}
+::: {.column width="50%" .fragment}
 ![SPRAWL session with Chris.](pictures/sprawl_chris_2.jpg){.photo .pair-img fig-alt="Chris standing and gesturing in a room full of SPRAWL access points, laptops and cables"}
+
+![Access point with wooden housing.](pictures/access_point.jpg){.photo .wide-img fig-alt="Close-up of two plywood access-point housings with a TU Studio logo and Ethernet cables"}
 :::
 ::::
 
-* JackTrip to connect multiple Access Points to a server
-* spatialization, mixing, ........
 
-
-# Enhanced Local Interaction 
-
-
-
-![Setup on three stories.](pictures/silent-green-0.png)
-
- 
-
-## Distributed systems open up the ensemble {background-image="pictures/silent_green_2020.webp" background-opacity="0.45"}
+## New Possibiities {background-image="pictures/silent_green_2020.webp" background-opacity="0.75"}
 
 :::: {.columns}
 ::: {.column width="55%"}
-- Sound comes **from the space**, not from a PA
-- Richer interaction between performers
-- Scores and instructions sent in **real time**
-- The audience can take part
+
+- Free placement of musicians
+- Interaction on touch screens
+- Scores and instructions on screens 
+
 :::
-::: {.column width="45%"}
+::: {.column width="45%" .fragment}
+![Setup on three stories.](pictures/silent-green-0.png){.photo .maxh-300 fig-alt="Sketch of performers, speakers and audience on three floors of a venue"}
+
 :::
 ::::
-
+ 
 ::: prose
 Distributed music systems change how sound, control and interaction are organised across performers and spaces. The first advantage is physical: a distributed ensemble adapts to the space and allows configurations a classic PA cannot produce. It also widens the range of interaction between musicians, supports real-time distribution of scores and performance instructions for adaptive or algorithmic compositions, and opens the door to audience participation, turning listeners into contributors.
 :::
