@@ -30,7 +30,7 @@ In fall 2025 MËSH was presented at the Convergence Innovation Competition Asia 
 
 :::: {.columns}
 ::: {.column width="45%"}
-![Node layout in Kuala Lumpur.](pictures/past_layout.png){.photo .ph}
+![Node layout in Kuala Lumpur.](pictures/past_layout.png){.photo .ph .maxh-400}
 :::
 ::: {.column width="55%"}
 - A camera at every node
@@ -38,7 +38,7 @@ In fall 2025 MËSH was presented at the Convergence Innovation Competition Asia 
 - Shared over OSC → SuperCollider sound field
 - Screens show the motion field back to visitors
 
-![](pictures/single_pi_screen_screenshot.png){.photo fig-alt="Motion visualisation on a node screen" style="max-height:230px; width:auto"}
+![](pictures/single_pi_screen_screenshot.png){.photo fig-alt="Motion visualisation on a node screen" style="max-height:170px; width:auto"}
 :::
 ::::
 
@@ -68,9 +68,9 @@ In performance mode, MËSH supported a networked ensemble in which performers co
 
 :::: {.columns}
 ::: {.column width="50%"}
-![Workshop](pictures/icmc_workshop.jpg){.photo .ph style="max-height:300px"}
+![Workshop](pictures/icmc_workshop.jpg){.photo .ph .maxh-195}
 
-![Installation](pictures/icmc_installation.jpg){.photo .ph style="max-height:300px"}
+![Installation](pictures/icmc_installation.jpg){.photo .ph .maxh-195}
 :::
 ::: {.column width="50%"}
 - Again: 3 cases, venue speakers, **2 people · 2 h**

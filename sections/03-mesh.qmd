@@ -19,7 +19,7 @@ MËSH is a distributed performance infrastructure that puts portability, efficie
 MËSH runs on a dedicated wireless network. Each node is both an independent sound source and part of a coordinated system. Control data (timing, parameter changes, interaction events) is sent as OSC. The current implementation does **not** stream audio between nodes: each node generates and processes sound locally. This keeps bandwidth low, simplifies network configuration and makes the system robust on Wi-Fi, where low-latency, high-quality audio streams are hard to maintain. Audio streaming is a topic for future versions.
 :::
 
-## Hardware: one node
+## Hardware: one node {.smaller-text}
 
 :::: {.columns}
 ::: {.column width="45%"}

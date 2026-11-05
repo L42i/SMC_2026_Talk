@@ -1,12 +1,51 @@
-# The Origins {background-image="pictures/sprawl_chris_2.jpg" background-opacity="0.45"}
+# The Origins {background-image="pictures/eoc_discount.jpg" background-opacity="0.75" background-position="center 62%"}
 
 
 
 
-## Hub Mode
+## Motivation: the EOC
+
+:::: {.columns}
+::: {.column width="46%"}
+![Performing **Heavy Rotations** with the EOC.](pictures/eoc_cables_mixing.jpg){.photo .ph .maxh-400 fig-alt="EOC performance: a person at the mixing table with turntables, laptop and many cables, modular synthesizer players behind"}
+
+::: {.smaller-text}
+<sup>1</sup> [eo-charlottenburg.de](https://eo-charlottenburg.de/)
+:::
+:::
+::: {.column width="54%"}
+- **Electronic Orchestra Charlottenburg**<sup>1</sup>: live electronics with 8-12 modular synts on immersive loudspeaker systems
+- Fully **analog** connections 
+- Ddigital mixer and processing
+- One person routes, mixes and **directs the sound** of everyone, in real time
+
+---
+
+::: {.fragment}
+**Motivation:** move routing and mixing into the network.
+
+- Reduce audio cables and hardware
+- Allow for enhanced interaction
+
+:::
+:::
+::::
+
+::: prose
+The idea for a different kind of system came out of playing in the [Electronic Orchestra Charlottenburg](https://eo-charlottenburg.de/). With modular synthesizers and other electronic instruments, every player is wired into a central mixing setup, and during a performance one person directs the sound of the whole ensemble: levels, routing and spatialisation for everybody at once. That means a lot of cables to set up and a single point of control. We wanted the network to take over routing and mixing, and give players direct access to the system.
+:::
+
+## SPRAWL I: Hub Mode
 
 
-![SPRAWL's hub architecture.](pictures/SPRAWL-server-access-point-architecture.png){.photo .scale-20 fig-alt="SPRAWL's hub architecture."}
+:::: {.columns}
+::: {.column width="50%"}
+![SPRAWL's hub architecture.](pictures/SPRAWL-server-access-point-architecture.png){.photo .pair-img fig-alt="SPRAWL's hub architecture."}
+:::
+::: {.column width="50%"}
+![SPRAWL session with Chris.](pictures/sprawl_chris_2.jpg){.photo .pair-img fig-alt="Chris standing and gesturing in a room full of SPRAWL access points, laptops and cables"}
+:::
+::::
 
 * JackTrip to connect multiple Access Points to a server
 * spatialization, mixing, ........
@@ -39,11 +78,6 @@ Distributed music systems change how sound, control and interaction are organise
 
 ## The catch: infrastructure
 
-
-![Caption for Image 2](pictures/silent_green_2020.webp)
-:::
-
-
 - Central servers, multichannel routing, networking between all performers
 - **Wired** Ethernet: reliable and low-latency, but…
   - cabling grows with ensemble size
@@ -58,9 +92,6 @@ MËSH is our answer: a portable ensemble system built around a wireless LAN and 
 :::
 
 ## From SPRAWL to MËSH
-
-![](pictures/two_nodes.jpg){.photo .ph fig-alt="Two MËSH nodes with touchscreens"}
-
 
 ::: column-page
 {{< include sections/_timeline.qmd >}}
