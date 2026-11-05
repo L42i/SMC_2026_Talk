@@ -1,37 +1,45 @@
-## Kuala Lumpur: installation
+## Kuala Lumpur: concert and interactive installation
 
-::::: {.columns}
-::: {.column width="50%"}
-- A camera at every node
-- OpenCV: total pixel motion as a proxy for movement
-- Shared over OSC → SuperCollider sound field
-- Screens show the motion field back to visitors
+:::: {.columns .mid-all}
+::: {.column width="45%"}
+```{=html}
+<div class="carousel cs-32" role="region" aria-label="Kuala Lumpur: the concert and the interactive installation">
+  <div class="cs-stage">
+    <div class="cs-item fragment fade-out" data-fragment-index="0"><img src="pictures/image_of_musician.jpg" alt="Dr. Ahmad Daudzi Musib performing with MËSH"><span class="cs-cap">Concert: Dr. Ahmad Daudzi Musib performing with MËSH.</span></div>
+    <div class="cs-item fragment fade-in-then-out" data-fragment-index="0"><img src="pictures/single_pi_screen_screenshot.png" alt="Motion visualisation on a node screen"><span class="cs-cap">Installation: motion visualisation on a node screen.</span></div>
+    <div class="cs-item cs-video fragment fade-in" data-fragment-index="1"><video controls playsinline preload="metadata" poster="media/cic_asia_visitors.jpg" src="media/cic_asia_visitors.mp4" aria-label="Visitors interacting with a node at the Convergence Innovation Competition Asia"></video></div>
+  </div>
+  <button class="cs-btn cs-prev" aria-label="Previous">&#8249;</button>
+  <button class="cs-btn cs-next" aria-label="Next">&#8250;</button>
+  <div class="cs-dots"><button class="cs-dot" aria-label="Item 1"></button><button class="cs-dot" aria-label="Item 2"></button><button class="cs-dot" aria-label="Item 3"></button></div>
+</div>
+```
 :::
-::: {.column width="50%"}
-![Motion visualisation on a node screen.](pictures/single_pi_screen_screenshot.png){.photo .maxh-400 fig-alt="Motion visualisation on a node screen"}
-:::
-:::::
+::: {.column width="55%" .tight}
+**A: Concert**
 
-::: prose
-In installation mode, visitors interacted through a camera at each node. A Python/OpenCV script tracked total pixel movement as a proxy for people moving through the room; each node's data was shared over OSC and used as control data for a SuperCollider sound field. Each touchscreen showed the direction every pixel moved between frames, inviting visitors to find out how their active and passive movement changed the sound field.
-:::
-
-## Kuala Lumpur: performance
-
-:::: {.columns}
-::: {.column width="58%"}
-![Dr. Ahmad Daudzi Musib performing with MËSH.](pictures/image_of_musician.jpg){.photo .ph}
-:::
-::: {.column width="42%"}
 - Graphic score [*DISCOUNT*](https://hvc.berlin/discount/) deployed to all nodes via Ansible
 - Players read the score on their node
 - Video nodes show it to the audience
 - Performers spread through the room
+
+::: {.sw-head}
+**B: Interactive installation**
+:::
+
+- A camera at every node tracks audience
+- OpenCV: pixel entropy as main parameter
+- Screens show the motion field back to visitors
+- Movement sonified on all nodes (OSC)
 :::
 ::::
 
 ::: prose
+At the Convergence Innovation Competition Asia, MËSH ran in two modes: a concert and an interactive installation.
+
 In performance mode, MËSH supported a networked ensemble in which performers controlled their own audio streams. The graphic score *DISCOUNT* was deployed to all nodes simultaneously with Ansible: musicians read it on the touchscreen at their node while the video nodes displayed it for the audience. Wireless connectivity let performers, and the sound, fill the room.
+
+In installation mode, visitors interacted through a camera at each node. A Python/OpenCV script tracked total pixel movement as a proxy for people moving through the room; each node's data was shared over OSC and used as control data for a SuperCollider sound field. Each touchscreen showed the direction every pixel moved between frames, inviting visitors to find out how their active and passive movement changed the sound field.
 :::
 
 ## ICMC Hamburg · Spring 2026

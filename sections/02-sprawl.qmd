@@ -39,23 +39,21 @@ In fall 2024 SPRAWL V2 was used at The Goat Farm Arts Center in Atlanta. Twelve 
 ![Workshop at the SuperCollider Symposium.](pictures/scsymp_workshop.jpg){.photo .ph}
 :::
 ::: {.column width="45%"}
+![](figures/topology_v2.svg){.v2-fig fig-alt="SPRAWL V2: six access points wired as a fully connected mesh carrying audio and control."}
+
+::: {.fragment data-fragment-index="1"}
 **Workshop**
 
 - Techniques for distributed systems
 - Fully connected mesh
 - Attendees prgrammed, using Ansible
+:::
 
-::: {.box .fragment}
+::: {.box .fragment data-fragment-index="2"}
 **Logistics**
 
 - **5 access points**
 - **10-hour drive** in a midsize car
-
-
-:::
-
-::: {.fragment}
-![](figures/topology_v2.svg){.v2-fig fig-alt="SPRAWL V2: six access points wired as a fully connected mesh carrying audio and control."}
 :::
 :::
 ::::

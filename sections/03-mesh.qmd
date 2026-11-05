@@ -17,9 +17,9 @@
 - 8 stations hroughout the space
 
 
-**Wired not feasible!**
-
 ::: {.fragment}
+**Wireless - Control Only!**
+
 ![](figures/topology_mesh.svg){.mesh-fig fig-alt="MËSH: eight nodes connected wirelessly to a central router, exchanging OSC control data only. Control travels, audio stays local."}
 :::
 :::
