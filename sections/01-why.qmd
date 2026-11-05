@@ -48,6 +48,7 @@ The idea for a different kind of system came out of playing in the [Electronic O
 * Hub server for mixing and rendering
 * Access Points for musicians
 * JackTrip for audio routing
+* Sound system connected to Hub
 
 :::
 ::: {.column width="50%" .fragment}
@@ -60,20 +61,24 @@ The idea for a different kind of system came out of playing in the [Electronic O
 
 ## New Possibiities {background-image="pictures/silent_green_2020.webp" background-opacity="0.75"}
 
-:::: {.columns}
+:::: {.columns .tall-cols}
 ::: {.column width="55%"}
-
+::: {.text-panel}
 - Free placement of musicians
 - Interaction on touch screens
-- Scores and instructions on screens 
+- Scores and instructions on screens
+:::
 
+::: {.bg-credit}
+Concert: Hub Mode at Silent Green, Berlin, Feb 2020
+:::
 :::
 ::: {.column width="45%" .fragment}
 ![Setup on three stories.](pictures/silent-green-0.png){.photo .maxh-300 fig-alt="Sketch of performers, speakers and audience on three floors of a venue"}
 
 :::
 ::::
- 
+
 ::: prose
 Distributed music systems change how sound, control and interaction are organised across performers and spaces. The first advantage is physical: a distributed ensemble adapts to the space and allows configurations a classic PA cannot produce. It also widens the range of interaction between musicians, supports real-time distribution of scores and performance instructions for adaptive or algorithmic compositions, and opens the door to audience participation, turning listeners into contributors.
 :::
