@@ -50,7 +50,7 @@ $presentation-h1-font-size: 1.7em;
 }
 
 // Full-bleed photo helper:  ![](x.jpg){.photo}
-.reveal img.photo { border-radius: 6px; box-shadow: 0 6px 24px rgba(0,0,0,.18); }
+.reveal img.photo { border-radius: 12px; box-shadow: 0 6px 24px rgba(0,0,0,.18); }
 .reveal img.scale-70 {
   display: block;
   width: 70%;
@@ -58,7 +58,11 @@ $presentation-h1-font-size: 1.7em;
   height: auto;
   margin: 0 auto;
 }
-.reveal .caption, .reveal figcaption { font-size: 0.5em; color: $muted; text-align: center; }
+// Captions are always centred under their image, on every slide
+.reveal .caption, .reveal figcaption { font-size: 0.5em; color: $muted; text-align: center !important; }
+.reveal figcaption { margin-left: auto; margin-right: auto; margin-top: 20px !important; }
+// block-level images: an inline image leaves baseline space under it and makes caption gaps uneven
+.reveal figure img { display: block; margin-left: auto; margin-right: auto; margin-bottom: 0; }
 
 .reveal table { font-size: 0.82em; }
 .reveal table th { border-bottom: 3px solid $ink; }
@@ -123,3 +127,15 @@ $presentation-h1-font-size: 1.7em;
 
 // No italics anywhere in the slides (emphasis, citations, timeline dates, references)
 .reveal, .reveal * { font-style: normal !important; }
+
+// Rounded corners on every image (the footer badge keeps its own small radius)
+.reveal img { border-radius: 12px; }
+.reveal .footer img.l42i-logo { border-radius: 2px; }
+
+// Layered images: big photo centred vertically (a bit low), second image above right, overlapping
+.reveal .overlap-stage { position: relative; height: 740px; }
+.reveal .overlap-stage .stage-a { position: absolute; left: 0; top: 95px; width: 1000px; }
+.reveal .overlap-stage .stage-b { position: absolute; left: 780px; top: 0; width: 700px; z-index: 2; }
+.reveal .overlap-stage img { box-sizing: border-box; display: block; width: 100%; max-width: 100%; height: auto; max-height: none; margin: 0; }
+.reveal .overlap-stage .stage-b img { border: 6px solid #fff; box-shadow: 0 8px 30px rgba(0,0,0,.35); }
+.reveal .overlap-stage .stage-b figcaption { display: block; width: fit-content; margin: .4em auto 0; background: rgba(255,255,255,.92); border-radius: 6px; padding: .2em .7em; text-align: center; }

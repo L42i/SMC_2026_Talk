@@ -16,7 +16,7 @@ h1.title { font-size: 2.6rem; letter-spacing: -0.015em; }
 .subtitle { color: #6e6e6e; }
 main h1 { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid #e3e0d8; }
 main h2 { margin-top: 2.2rem; }
-img.section-photo { width: 100%; max-height: 340px; object-fit: cover; border-radius: 6px; margin: .5rem 0 1rem; }
+img.section-photo { width: 100%; max-height: 340px; object-fit: cover; border-radius: 12px; margin: .5rem 0 1rem; }
 main img.scale-70 {
   display: block;
   width: 70%;
@@ -33,3 +33,4 @@ main a, .csl-entry { overflow-wrap: anywhere; }
 .l42i-footer img { height: 2.2rem; width: auto; border-radius: 3px; }
 
 main figcaption, main .caption { text-align: center; }
+main img { border-radius: 12px; }
