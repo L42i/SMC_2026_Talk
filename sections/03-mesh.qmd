@@ -1,4 +1,4 @@
-# The MËSH system {background-image="pictures/mesh_build_in_progress.jpg" background-opacity="0.45"}
+# The MËSH System {background-image="pictures/mesh_build_in_progress.jpg" background-opacity="0.45"}
 
 ## Design goals
 

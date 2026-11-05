@@ -1,40 +1,30 @@
-# SPRAWL V2: the wired predecessor of MËSH {background-image="pictures/goat_farm.jpeg" background-opacity="0.45"}
-
-## SPRAWL → SPRAWL V2
-
-:::: {.columns}
-::: {.column width="50%"}
-**SPRAWL** (2019/20)
-
-- Central server: routing, mixing, spatialisation
-- Access points on a wired LAN
-- Control via OSC [@wright2003opensound]
-:::
-::: {.column width="50%" .fragment}
-**SPRAWL V2** (2024)
-
-- **A speaker at every access point**
-- New hardware, **no central server**
-- Fully connected mesh, but every link is a cable
-:::
-::::
-
-::: prose
-The original SPRAWL used a client–server architecture: a central server handled audio routing, mixing and spatialisation, and performers connected through access points on a wired LAN. Audio from each access point went to the server, was processed and redistributed to the other performers and the spatialisation system, while OSC handled control such as levels, routing and spatialisation. A pre-version in late 2023 in Germany almost had this, but its speakers were still placed conservatively. SPRAWL V2, in 2024, put a speaker at every access point, updated the hardware and removed the central server, connecting the access points in a fully connected mesh. That is stable and low-latency, but it still depends on wired connections between all components.
-:::
+# SPRAWL V2: the wired predecessor of MËSH {background-image="pictures/gatech_class.webp" background-size="cover" background-color="#000" background-opacity="0.7"}
 
 ## Goat Farm Arts Center, Atlanta · Fall 2024
 
-:::: {.columns}
-::: {.column width="40%"}
-- **12** access points, one musician each
-- Student-built SPRAWL V2 programs
+:::: {.columns .mid-cols}
+::: {.column width="30%"}
+- 12 Access Points
+- Student-built concepts
   - spatialised granular synthesis
   - graphic scores for audience and players
-- Some access points open to the audience
+- **Audience-participation**
 :::
-::: {.column width="60%"}
-![A SPRAWL V2 access point: drum into microphone, interface, system.](pictures/goat_farm.jpeg){.photo .ph}
+::: {.column width="70%"}
+```{=html}
+<div class="carousel" role="region" aria-label="Goat Farm photos and video">
+  <div class="cs-stage">
+    <div class="cs-item fragment fade-out" data-fragment-index="0"><img src="pictures/goat_farm.jpeg" alt="A SPRAWL V2 access point: drum into microphone, interface, system."><span class="cs-cap">A SPRAWL V2 access point: drum into microphone, interface, system.</span></div>
+    <div class="cs-item fragment fade-in-then-out" data-fragment-index="0"><img src="pictures/goat_farm_players.jpg" alt="Players at their access points, each with a local speaker."><span class="cs-cap">Players at their access points, each with a local speaker.</span></div>
+    <div class="cs-item fragment fade-in-then-out" data-fragment-index="1"><img src="pictures/goat_farm_audience.jpg" alt="The audience at the projection."><span class="cs-cap">The audience at the projection.</span></div>
+    <div class="cs-item fragment fade-in-then-out" data-fragment-index="2"><img src="pictures/goat_farm_modular.jpg" alt="An access point with a modular synthesizer."><span class="cs-cap">An access point with a modular synthesizer.</span></div>
+    <div class="cs-item cs-video fragment fade-in" data-fragment-index="3"><iframe src="https://www.youtube-nocookie.com/embed/z1KnUYmNNnI?enablejsapi=1&rel=0" title="MËSH at The Goat Farm" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+  </div>
+  <button class="cs-btn cs-prev" aria-label="Previous">&#8249;</button>
+  <button class="cs-btn cs-next" aria-label="Next">&#8250;</button>
+  <div class="cs-dots"><button class="cs-dot" aria-label="Item 1"></button><button class="cs-dot" aria-label="Item 2"></button><button class="cs-dot" aria-label="Item 3"></button><button class="cs-dot" aria-label="Item 4"></button><button class="cs-dot" aria-label="Item 5"></button></div>
+</div>
+```
 :::
 ::::
 
@@ -49,13 +39,19 @@ In fall 2024 SPRAWL V2 was used at The Goat Farm Arts Center in Atlanta. Twelve 
 ![Workshop at the SuperCollider Symposium.](pictures/scsymp_workshop.jpg){.photo .ph}
 :::
 ::: {.column width="45%"}
-- Workshop: techniques for distributed systems
-- Fully connected mesh; attendees designed the processing for their access point
+**Workshop**
+
+- Techniques for distributed systems
+- Fully connected mesh
+- Attendees prgrammed, using Ansible
+
+::: {.box .fragment}
+**Logistics**
+
 - **5 access points**
 - **10-hour drive** in a midsize car
 
-::: {.fragment}
-→ this is what we set out to fix
+
 :::
 :::
 ::::
