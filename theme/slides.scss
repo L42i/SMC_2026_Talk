@@ -108,3 +108,5 @@ $presentation-h1-font-size: 1.7em;
 .reveal img.maxh-420 { max-height: 420px; }
 // Two images of identical size side by side (diagram letterboxes on white, photo fills)
 .reveal img.pair-img { display: block; width: 600px; height: 400px; max-width: 100%; max-height: none; object-fit: contain; margin: 0 auto; background: #fff; }
+.reveal img.wide-img { display: block; width: 570px; max-width: 100%; height: auto; max-height: 250px; object-fit: cover; margin: 0 auto; }
+.reveal img.maxh-300 { max-height: 300px; width: auto; }

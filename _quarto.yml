@@ -52,7 +52,9 @@ format:
     show-slide-number: all
     hash: true
     history: false
-    transition: none
+    # global cross-dissolve between slides (speed: slow | default | fast)
+    transition: fade
+    transition-speed: default
     background-transition: fade
     controls: true
     progress: true
