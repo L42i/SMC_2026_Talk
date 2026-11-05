@@ -33,11 +33,3 @@
 - Movement sonified on all nodes (OSC)
 :::
 ::::
-
-::: prose
-At the Convergence Innovation Competition Asia, MËSH ran in two modes: a concert and an interactive installation.
-
-In performance mode, MËSH supported a networked ensemble in which performers controlled their own audio streams. The graphic score *DISCOUNT* was deployed to all nodes simultaneously with Ansible: musicians read it on the touchscreen at their node while the video nodes displayed it for the audience. Wireless connectivity let performers, and the sound, fill the room.
-
-In installation mode, visitors interacted through a camera at each node. A Python/OpenCV script tracked total pixel movement as a proxy for people moving through the room; each node's data was shared over OSC and used as control data for a SuperCollider sound field. Each touchscreen showed the direction every pixel moved between frames, inviting visitors to find out how their active and passive movement changed the sound field.
-:::

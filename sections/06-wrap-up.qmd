@@ -20,6 +20,15 @@
 :::
 ::::
 
+::: {.more-links}
+**More**
+
+- Code: [github.com/L42i/MESH](https://github.com/L42i/MESH)
+- Project: [l42i.music.gatech.edu/projects/mesh](https://l42i.music.gatech.edu/projects/mesh)
+- SPRAWL: [hvc.berlin/research/sprawl_system](https://hvc.berlin/research/sprawl_system)
+- Website: [l42i.github.io/SMC_2026_Talk](https://l42i.github.io/SMC_2026_Talk/)
+:::
+
 ## References {.references-slide .scrollable}
 
 ::: {#refs}

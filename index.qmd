@@ -7,12 +7,14 @@ author:
   - name: Henrik von Coler
     affiliation: Georgia Institute of Technology
 abstract: |
+  [Open the slides →](slides.html){.btn .btn-primary .slides-btn}
+
   MËSH is a wireless, networked system for music performances and
   installations, and the successor to the wired SPRAWL system. It
   distributes sound generation, control and interaction across compact,
   self-contained nodes that share control data over OSC. This page is the
-  companion to the talk: the same material as the slides, with the spoken
-  part written out.
+  companion to the talk: the same material as the slides, with the
+  references and links.
 # sources from the removed "Related work" slide: listed in the references, not cited on a slide
 nocite: |
   @HUBintro, @PLorkYear1, @slork, @nime2010_Bukvic_linux, @helo, @rottondiNMP, @chafe2010effect, @caceres2010jacktrip, @telematic, @turchet2018iomust

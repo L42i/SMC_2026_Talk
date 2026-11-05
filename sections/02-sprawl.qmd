@@ -28,10 +28,6 @@
 :::
 ::::
 
-::: prose
-In fall 2024 SPRAWL V2 was used at The Goat Farm Arts Center in Atlanta. Twelve access points were set up, each with a musician playing their own instrument into the system. The concert consisted of student-created programs ranging from real-time spatialized granular synthesis to a graphic score visible to audience and musicians. At the access point shown, the drum is picked up by a microphone into the audio interface and fed into the system; other access points let the audience play along.
-:::
-
 ## SuperCollider Symposium, DC · Spring 2025
 
 :::: {.columns}
@@ -57,7 +53,3 @@ In fall 2024 SPRAWL V2 was used at The Goat Farm Arts Center in Atlanta. Twelve 
 :::
 :::
 ::::
-
-::: prose
-After being taught in the classroom in fall 2024, SPRAWL V2 went to Washington, DC in spring 2025 for a workshop at the SuperCollider Symposium. The workshop covered techniques for working with SPRAWL V2 and, more generally, with distributed performance systems; attendees designed the audio processing for their own access point in the mesh. Bringing five access points meant a ten-hour drive from Atlanta in a midsize vehicle. That trip motivated MËSH.
-:::

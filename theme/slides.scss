@@ -194,3 +194,17 @@ $presentation-h1-font-size: 1.93em;     // = 58px
 .reveal .summary-cols .box { margin-top: 0; }
 .reveal .carousel.cs-wide { width: 94%; margin-left: 0; margin-right: auto; }
 .reveal img.maxh-640 { max-height: 640px; width: auto; max-width: 96%; }
+
+// QR code, link list and the "More" links
+.reveal img.qr { width: 520px; max-width: 100%; height: auto; background: #fff; border: 1px solid #ddd; border-radius: 12px; box-shadow: none; display: block; margin: 0 auto; }
+.reveal .link-list a { font-size: 1em; }
+.reveal .link-list p { margin: .3em 0 1.2em; }
+.reveal .more-links { margin-top: 1.3em; font-size: 0.78em; }
+.reveal .more-links ul { margin: .2em 0 0; column-count: 2; column-gap: 1.5em; list-style-position: inside; }
+.reveal .more-links li { margin-bottom: .25em; break-inside: avoid; }
+.reveal .more-links p { margin: 0; }
+.reveal .summary-cols { padding-top: 70px; }
+
+// Footer elements link to the lab page: keep them looking like plain footer text
+.reveal .footer a { color: inherit; text-decoration: none; text-align: center; }
+.reveal .footer a:hover { text-decoration: underline; }

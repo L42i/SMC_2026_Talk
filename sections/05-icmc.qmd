@@ -4,10 +4,6 @@
 Concert · Installation · Workshop
 :::
 
-::: prose
-For the International Computer Music Conference in Hamburg in spring 2026 the system again traveled in three road cases, with speakers provided by the conference, and again took two people two hours to set up and soundcheck in an unfamiliar venue. MËSH appeared in three formats: a concert, an interactive installation and a workshop.
-:::
-
 ## ICMC: Concert
 
 :::: {.columns .mid-all}
@@ -20,10 +16,6 @@ For the International Computer Music Conference in Hamburg in spring 2026 the sy
 - Different stems synchronized on all nodes
 :::
 ::::
-
-::: prose
-The concert at ICMC 2026 featured zlister (Orlando Kenny): a rap performance, popular music, with the MËSH nodes on stage and a projected visual behind.
-:::
 
 ## ICMC: Installation
 
@@ -48,10 +40,6 @@ The concert at ICMC 2026 featured zlister (Orlando Kenny): a rap performance, po
 :::
 ::::
 
-::: prose
-The installation reworked the Kuala Lumpur piece with new sound design and more efficient visuals; it ran autonomously for eight hours and was visited by roughly 100 members of the ICMC community. The conference recorded it: "MËSH" by Henry Windish, Tristan Peng and Henrik von Coler.
-:::
-
 ## ICMC: Workshop
 
 :::: {.columns .mid-all}
@@ -72,7 +60,3 @@ The installation reworked the Kuala Lumpur piece with new sound design and more 
 - Simple activities for visitors
 :::
 ::::
-
-::: prose
-The one-hour workshop introduced participants to MËSH hands-on: four guided demonstrations, each paired with prediction activities, discussion and exercises on system behavior, use cases and trade-offs, ending with a discussion of how MËSH-type systems could fit participants' own work.
-:::

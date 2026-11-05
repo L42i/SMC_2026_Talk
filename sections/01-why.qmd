@@ -1,7 +1,23 @@
+::: {.content-visible when-format="revealjs"}
+## Slides
+
+:::: {.columns .mid-all}
+::: {.column width="42%"}
+![](figures/qr_site.svg){.qr fig-alt="QR code linking to the talk website"}
+:::
+::: {.column width="58%" .link-list}
+**Website**
+
+[l42i.github.io/SMC_2026_Talk](https://l42i.github.io/SMC_2026_Talk/)
+
+**Slides**
+
+[l42i.github.io/SMC_2026_Talk/slides.html](https://l42i.github.io/SMC_2026_Talk/slides.html)
+:::
+::::
+:::
+
 # The Origins {background-image="pictures/eoc_discount.jpg" background-opacity="0.75" background-position="center 62%"}
-
-
-
 
 ## Motivation: the EOC
 
@@ -34,12 +50,7 @@
 :::
 ::::
 
-::: prose
-The idea for a different kind of system came out of playing in the [Electronic Orchestra Charlottenburg](https://eo-charlottenburg.de/). With modular synthesizers and other electronic instruments, every player is wired into a central mixing setup, and during a performance one person directs the sound of the whole ensemble: levels, routing and spatialization for everybody at once. That means a lot of cables to set up and a single point of control. We wanted the network to take over routing and mixing, and give players direct access to the system.
-:::
-
 ## SPRAWL I: Hub Mode
-
 
 :::: {.columns}
 ::: {.column width="50%"}
@@ -57,7 +68,6 @@ The idea for a different kind of system came out of playing in the [Electronic O
 ![Access point with wooden housing.](pictures/access_point.jpg){.photo .wide-img fig-alt="Close-up of two plywood access-point housings with a TU Studio logo and Ethernet cables"}
 :::
 ::::
-
 
 ## New Possibilities {background-image="pictures/silent_green_2020.webp" background-opacity="0.75"}
 
@@ -79,10 +89,6 @@ Concert: Hub Mode at Silent Green, Berlin, Feb 2020
 :::
 ::::
 
-::: prose
-Distributed music systems change how sound, control and interaction are organized across performers and spaces. The first advantage is physical: a distributed ensemble adapts to the space and allows configurations a classic PA cannot produce. It also widens the range of interaction between musicians, supports real-time distribution of scores and performance instructions for adaptive or algorithmic compositions, and opens the door to audience participation, turning listeners into contributors.
-:::
-
 ## SPRAWL I: Touch Interface
 
 ::: {.overlap-stage}
@@ -96,19 +102,8 @@ Distributed music systems change how sound, control and interaction are organize
 
 # From SPRAWL to MËSH {background-image="pictures/section_projection.webp" background-size="cover" background-color="#000" background-opacity="0.85"}
 
-::: prose
-These systems usually need complex infrastructure. Setup time is substantial, and transporting and configuring specialized equipment limits rehearsal, touring and performance in varied venues. Wired networking is a particular constraint: Ethernet gives reliable, low-latency communication, but cabling grows with the ensemble, constrains where performers can stand, and complicates setup in temporary spaces.
-
-MËSH is our answer: a portable ensemble system built around a wireless LAN and a streamlined, automated setup workflow.
-:::
-
 ## The Timeline
 
 ::: column-page
 {{< include sections/_timeline.qmd >}}
 :::
-
-::: prose
-The path covered in this talk: from the original, server-based SPRAWL [@voncoler2020sprawl], through a late-2023 pre-version and the wired, fully connected SPRAWL V2 with a speaker at every access point, and two deployments that exposed its touring overhead, to the wireless MËSH system and its first two international deployments.
-:::
-

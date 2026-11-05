@@ -37,7 +37,7 @@ format:
         href: slides.html
         icon: easel
       - text: "MËSH on GitHub"
-        href: https://github.com/L42i/MËSH
+        href: https://github.com/L42i/MESH
         icon: github
 
   revealjs:
@@ -61,7 +61,7 @@ format:
     progress: true
     preview-links: false
     citations-hover: true
-    footer: '[Lab for Interaction & Immersion]{.f-left} ![](pictures/l42i.png){.l42i-logo fig-alt="L42i"} [From SPRAWL to MËSH · SMC 2026]{.f-right}'
+    footer: '[[Lab for Interaction & Immersion]{.f-left}](https://l42i.music.gatech.edu/) [![](pictures/l42i.png){.l42i-logo fig-alt="L42i"}](https://l42i.music.gatech.edu/) [[From SPRAWL to MËSH · SMC 2026]{.f-right}](https://l42i.music.gatech.edu/)'
     # On narrow screens the deck becomes a scrolling page automatically;
     # append ?view=scroll to the URL to force it.
     scroll-view:
