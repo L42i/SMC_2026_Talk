@@ -16,10 +16,10 @@
 ::: {.column width="54%"}
 **Electronic Orchestra Charlottenburg**<sup>1</sup>
 
-- Live electronics with 8-12 modular synts on immersive loudspeaker systems
+- Live electronics with 8–12 modular synths on immersive loudspeaker systems
 - Fully analog connections 
-- Ddigital mixer and processing
-- Sound director, mixes and spatializes everyone, in real time
+- Digital mixer and processing
+- Sound director mixes and spatializes everyone in real time
 
 ---
 
@@ -35,7 +35,7 @@
 ::::
 
 ::: prose
-The idea for a different kind of system came out of playing in the [Electronic Orchestra Charlottenburg](https://eo-charlottenburg.de/). With modular synthesizers and other electronic instruments, every player is wired into a central mixing setup, and during a performance one person directs the sound of the whole ensemble: levels, routing and spatialisation for everybody at once. That means a lot of cables to set up and a single point of control. We wanted the network to take over routing and mixing, and give players direct access to the system.
+The idea for a different kind of system came out of playing in the [Electronic Orchestra Charlottenburg](https://eo-charlottenburg.de/). With modular synthesizers and other electronic instruments, every player is wired into a central mixing setup, and during a performance one person directs the sound of the whole ensemble: levels, routing and spatialization for everybody at once. That means a lot of cables to set up and a single point of control. We wanted the network to take over routing and mixing, and give players direct access to the system.
 :::
 
 ## SPRAWL I: Hub Mode
@@ -46,7 +46,7 @@ The idea for a different kind of system came out of playing in the [Electronic O
 ![SPRAWL's hub architecture.](pictures/SPRAWL-server-access-point-architecture.png){.photo .pair-img fig-alt="SPRAWL's hub architecture."}
 
 * Hub server for mixing and rendering
-* Access Points for musicians
+* Access points for musicians
 * JackTrip for audio routing
 * Sound system connected to Hub
 
@@ -59,7 +59,7 @@ The idea for a different kind of system came out of playing in the [Electronic O
 ::::
 
 
-## New Possibiities {background-image="pictures/silent_green_2020.webp" background-opacity="0.75"}
+## New Possibilities {background-image="pictures/silent_green_2020.webp" background-opacity="0.75"}
 
 :::: {.columns .tall-cols}
 ::: {.column width="55%"}
@@ -80,7 +80,7 @@ Concert: Hub Mode at Silent Green, Berlin, Feb 2020
 ::::
 
 ::: prose
-Distributed music systems change how sound, control and interaction are organised across performers and spaces. The first advantage is physical: a distributed ensemble adapts to the space and allows configurations a classic PA cannot produce. It also widens the range of interaction between musicians, supports real-time distribution of scores and performance instructions for adaptive or algorithmic compositions, and opens the door to audience participation, turning listeners into contributors.
+Distributed music systems change how sound, control and interaction are organized across performers and spaces. The first advantage is physical: a distributed ensemble adapts to the space and allows configurations a classic PA cannot produce. It also widens the range of interaction between musicians, supports real-time distribution of scores and performance instructions for adaptive or algorithmic compositions, and opens the door to audience participation, turning listeners into contributors.
 :::
 
 ## SPRAWL I: Touch Interface
@@ -97,7 +97,7 @@ Distributed music systems change how sound, control and interaction are organise
 # From SPRAWL to MËSH {background-image="pictures/section_projection.webp" background-size="cover" background-color="#000" background-opacity="0.85"}
 
 ::: prose
-These systems usually need complex infrastructure. Setup time is substantial, and transporting and configuring specialised equipment limits rehearsal, touring and performance in varied venues. Wired networking is a particular constraint: Ethernet gives reliable, low-latency communication, but cabling grows with the ensemble, constrains where performers can stand, and complicates setup in temporary spaces.
+These systems usually need complex infrastructure. Setup time is substantial, and transporting and configuring specialized equipment limits rehearsal, touring and performance in varied venues. Wired networking is a particular constraint: Ethernet gives reliable, low-latency communication, but cabling grows with the ensemble, constrains where performers can stand, and complicates setup in temporary spaces.
 
 MËSH is our answer: a portable ensemble system built around a wireless LAN and a streamlined, automated setup workflow.
 :::

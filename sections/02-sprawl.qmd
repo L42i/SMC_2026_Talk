@@ -4,11 +4,11 @@
 
 :::: {.columns .mid-cols}
 ::: {.column width="30%"}
-- 12 Access Points
+- 12 access points
 - Student-built concepts
-  - spatialised granular synthesis
+  - spatialized granular synthesis
   - graphic scores for audience and players
-- **Audience-participation**
+- **Audience participation**
 :::
 ::: {.column width="70%"}
 ```{=html}
@@ -29,7 +29,7 @@
 ::::
 
 ::: prose
-In fall 2024 SPRAWL V2 was used at The Goat Farm Arts Center in Atlanta. Twelve access points were set up, each with a musician playing their own instrument into the system. The concert consisted of student-created programs ranging from real-time spatialised granular synthesis to a graphic score visible to audience and musicians. At the access point shown, the drum is picked up by a microphone into the audio interface and fed into the system; other access points let the audience play along.
+In fall 2024 SPRAWL V2 was used at The Goat Farm Arts Center in Atlanta. Twelve access points were set up, each with a musician playing their own instrument into the system. The concert consisted of student-created programs ranging from real-time spatialized granular synthesis to a graphic score visible to audience and musicians. At the access point shown, the drum is picked up by a microphone into the audio interface and fed into the system; other access points let the audience play along.
 :::
 
 ## SuperCollider Symposium, DC · Spring 2025
@@ -46,7 +46,7 @@ In fall 2024 SPRAWL V2 was used at The Goat Farm Arts Center in Atlanta. Twelve 
 
 - Techniques for distributed systems
 - Fully connected mesh
-- Attendees prgrammed, using Ansible
+- Attendees programmed, using Ansible
 :::
 
 ::: {.box .fragment data-fragment-index="2"}

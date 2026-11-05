@@ -11,7 +11,7 @@
 ::: {.tl2-body}
 [2019 / 2020]{.tl-date}
 [SPRAWL]{.tl-tab .system}
-[Central server for routing, mixing, spatialisation. Access points on a **wired** LAN [@voncoler2020sprawl].]{.tl-desc}
+[Central server for routing, mixing, spatialization. Access points on a **wired** LAN [@voncoler2020sprawl].]{.tl-desc}
 :::
 ::: {.tl2-dot}
 []{.d}

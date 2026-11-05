@@ -14,7 +14,7 @@
 
 - 2 students
 - Large foyer
-- 8 stations hroughout the space
+- 8 stations throughout the space
 
 
 ::: {.fragment}
@@ -26,7 +26,7 @@
 ::::
 
 ::: prose
-Without cables, nodes could be placed freely through the space. At the Convergence Innovation Competition Asia in Kuala Lumpur in fall 2025, two students took the system there and set it up. The eight sound stations were distributed through the convention centre foyer, with a single Wi-Fi router. Running audio and Ethernet between all of them would have been impractical; this is the reason MËSH went wireless.
+Without cables, nodes could be placed freely through the space. At the Convergence Innovation Competition Asia in Kuala Lumpur in fall 2025, two students took the system there and set it up. The eight sound stations were distributed through the convention center foyer, with a single Wi-Fi router. Running audio and Ethernet between all of them would have been impractical; this is the reason MËSH went wireless.
 
 MËSH runs on a dedicated wireless network. Each node is both an independent sound source and part of a coordinated system. Control data (timing, parameter changes, interaction events) is sent as OSC. The current implementation does **not** stream audio between nodes: each node generates and processes sound locally. This keeps bandwidth low, simplifies network configuration and makes the system robust on Wi-Fi, where low-latency, high-quality audio streams are hard to maintain. Audio streaming is a topic for future versions.
 :::
@@ -75,7 +75,7 @@ MËSH runs on a dedicated wireless network. Each node is both an independent sou
 ::::
 
 ::: prose
-Each node is built around a Raspberry Pi 5 with a 10.1-inch ROADOM touchscreen for local control and visualisation and a Focusrite Scarlett 2i2 audio interface. All nodes are networked through one dedicated router; a powered loudspeaker, usually supplied by the venue, sits with each node. For installations, EMEET C960 webcams at each node enable audience interaction. Video nodes are Beelink S12 Mini PCs running Ubuntu 24.04 LTS on the same network: they receive OSC and turn it into generative visuals, often in Processing, and also display graphic scores.
+Each node is built around a Raspberry Pi 5 with a 10.1-inch ROADOM touchscreen for local control and visualization and a Focusrite Scarlett 2i2 audio interface. All nodes are networked through one dedicated router; a powered loudspeaker, usually supplied by the venue, sits with each node. For installations, EMEET C960 webcams at each node enable audience interaction. Video nodes are Beelink S12 Mini PCs running Ubuntu 24.04 LTS on the same network: they receive OSC and turn it into generative visuals, often in Processing, and also display graphic scores.
 
 All nodes run Debian 13 "Trixie". SuperCollider runs independently on each node, so audio is generated locally while the node responds to networked control messages over OSC. OpenCV analyses webcam video in real time; the results can be mapped to musical parameters or drive visuals on the video nodes. Deployment and maintenance are automated with Ansible: configuration, updates and system management happen on all nodes at once, and pieces and installations are themselves Ansible playbooks that configure every node in one step. This keeps the system consistent and setup short.
 :::
