@@ -1,60 +1,81 @@
 # The MËSH System {background-image="pictures/mesh_build_in_progress.jpg" background-opacity="0.45"}
 
-## Design goals
+## Why wireless: the Kuala Lumpur venue
 
-- **Portable**: compact, self-contained nodes
-- **Wireless**: no audio or Ethernet runs between nodes
-- **Decentralised**: every node is an independent sound source *and* part of the whole
-- **Fast to deploy**: one automated workflow for every venue
-
-::: prose
-MËSH is a distributed performance infrastructure that puts portability, efficiency and flexibility first without giving up expressive range. Each node integrates computation, audio I/O and control in one unit, avoiding racks and central equipment. Instead of analog or digital audio runs, nodes communicate over a network, which makes setup simpler and lets nodes go almost anywhere: unconventional stage layouts, audience-distributed configurations or site-specific installations.
+:::: {.columns .split-cols}
+::: {.column width="58%"}
+![Node layout in Kuala Lumpur: eight sound stations and the Wi-Fi router.](pictures/past_layout.png){.photo .maxh-560 fig-alt="Floor plan of the convention foyer in Kuala Lumpur with eight sound stations spread around the space and one Wi-Fi router"}
 :::
+::: {.column width="42%"}
+**Convergence Innovation Competition Asia**
 
-## Architecture: control travels, audio stays local
+- Kuala Lumpur, Fall 2025
 
-![](figures/topology.svg){width="100%" fig-alt="Left: SPRAWL V2 access points wired as a fully connected mesh carrying audio and control. Right: eight MËSH nodes connected wirelessly to a central router, exchanging OSC control data only."}
+
+- 2 students
+- Large foyer
+- 8 stations hroughout the space
+
+
+**Wired not feasible!**
+
+::: {.fragment}
+![](figures/topology_mesh.svg){.mesh-fig fig-alt="MËSH: eight nodes connected wirelessly to a central router, exchanging OSC control data only. Control travels, audio stays local."}
+:::
+:::
+::::
 
 ::: prose
+Without cables, nodes could be placed freely through the space. At the Convergence Innovation Competition Asia in Kuala Lumpur in fall 2025, two students took the system there and set it up. The eight sound stations were distributed through the convention centre foyer, with a single Wi-Fi router. Running audio and Ethernet between all of them would have been impractical; this is the reason MËSH went wireless.
+
 MËSH runs on a dedicated wireless network. Each node is both an independent sound source and part of a coordinated system. Control data (timing, parameter changes, interaction events) is sent as OSC. The current implementation does **not** stream audio between nodes: each node generates and processes sound locally. This keeps bandwidth low, simplifies network configuration and makes the system robust on Wi-Fi, where low-latency, high-quality audio streams are hard to maintain. Audio streaming is a topic for future versions.
 :::
 
-## Hardware: one node {.smaller-text}
+## The MËSH Setup
 
-:::: {.columns}
+:::: {.columns .mid-all}
 ::: {.column width="45%"}
-![](pictures/one_node_equipment.jpg){.photo .ph fig-alt="Hardware for one MËSH node"}
+```{=html}
+<div class="carousel cs-sq" role="region" aria-label="The MËSH node and the complete system in its cases">
+  <div class="cs-stage">
+    <div class="cs-item fragment fade-out" data-fragment-index="0"><img src="pictures/one_node_equipment.jpg" alt="Hardware for one MËSH node"><span class="cs-cap">One node: Raspberry Pi, touchscreen, audio interface, webcam.</span></div>
+    <div class="cs-item fragment fade-in" data-fragment-index="0"><img src="pictures/mesh_in_cases.jpeg" alt="The complete system in three road cases with baggage tags"><span class="cs-cap">The complete system in three road cases.</span></div>
+  </div>
+  <button class="cs-btn cs-prev" aria-label="Previous">&#8249;</button>
+  <button class="cs-btn cs-next" aria-label="Next">&#8250;</button>
+  <div class="cs-dots"><button class="cs-dot" aria-label="Item 1"></button><button class="cs-dot" aria-label="Item 2"></button></div>
+</div>
+```
 :::
-::: {.column width="55%"}
-- Raspberry Pi 5
-- 10.1″ ROADOM touchscreen
-- Focusrite Scarlett 2i2
-- EMEET C960 webcam (installations)
-- Powered speaker, supplied by the venue
-- One dedicated router for all nodes
+::: {.column width="55%" .tight}
+**Hardware**
 
-::: {.fragment}
-**Video nodes**: Beelink S12 Mini, Ubuntu 24.04. OSC in, generative visuals (Processing) and graphic scores out.
+- Raspberry Pi 5 with 10.1″ touchscreen
+- Focusrite Scarlett 2i2
+- 4 extra video nodes: Beelink S12 Mini
+
+::: {.sw-head}
+**Software**
+:::
+
+- SuperCollider per node, OSC between nodes
+- OpenCV for audience interaction [@opencv_library]
+- Ansible for deployment [@ansible]
+
+::: {.box .box-mesh .fragment}
+::: {.sw-head}
+**Venue Provides**
+:::
+
+- Loudspeakers
+- Mics
+- Power
 :::
 :::
 ::::
 
 ::: prose
 Each node is built around a Raspberry Pi 5 with a 10.1-inch ROADOM touchscreen for local control and visualisation and a Focusrite Scarlett 2i2 audio interface. All nodes are networked through one dedicated router; a powered loudspeaker, usually supplied by the venue, sits with each node. For installations, EMEET C960 webcams at each node enable audience interaction. Video nodes are Beelink S12 Mini PCs running Ubuntu 24.04 LTS on the same network: they receive OSC and turn it into generative visuals, often in Processing, and also display graphic scores.
-:::
 
-## Software
-
-- Debian 13 "Trixie" on every node
-- **SuperCollider** per node: local synthesis, networked control
-- **OSC** between nodes
-- **OpenCV** + webcam for audience interaction [@opencv_library]
-- **Ansible** for deployment [@ansible]
-
-::: {.fragment}
-> A piece is an Ansible playbook:<br>one command configures every audio and video node.
-:::
-
-::: prose
 All nodes run Debian 13 "Trixie". SuperCollider runs independently on each node, so audio is generated locally while the node responds to networked control messages over OSC. OpenCV analyses webcam video in real time; the results can be mapped to musical parameters or drive visuals on the video nodes. Deployment and maintenance are automated with Ansible: configuration, updates and system management happen on all nodes at once, and pieces and installations are themselves Ansible playbooks that configure every node in one step. This keeps the system consistent and setup short.
 :::

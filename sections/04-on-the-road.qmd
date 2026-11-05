@@ -1,49 +1,19 @@
-# On the road {background-image="pictures/mesh_in_cases.jpeg" background-opacity="0.35"}
-
-## Kuala Lumpur · Fall 2025
-
-:::: {.columns}
-::: {.column width="40%"}
-![The complete system in cases.](pictures/mesh_in_cases.jpeg){.photo .ph}
-:::
-::: {.column width="60%"}
-Convergence Innovation Competition Asia
-
-::: {.bignums}
-<div><b>8</b><span>nodes</span></div>
-<div><b>3</b><span>road cases</span></div>
-<div><b>2</b><span>people</span></div>
-<div><b>2 h</b><span>setup + soundcheck</span></div>
-:::
-
-- Flown as standard checked luggage
-- Only the speakers came from the venue
-- Setup fully automated with Ansible
-:::
-::::
-
-::: prose
-In fall 2025 MËSH was presented at the Convergence Innovation Competition Asia in Kuala Lumpur, a practical test of portability, setup and flexibility. An eight-node system travelled as standard checked luggage, with all node and networking equipment in three Gator road cases. Everything fit except the speakers, which the venue supplied. That is a significant reduction in logistics compared with SPRAWL. On site, setup meant powering the router and nodes, bringing up the wireless network and initialising audio and control, all automated with Ansible. Two people set up and soundchecked the system in two hours.
-:::
-
 ## Kuala Lumpur: installation
 
-:::: {.columns}
-::: {.column width="45%"}
-![Node layout in Kuala Lumpur.](pictures/past_layout.png){.photo .ph .maxh-400}
-:::
-::: {.column width="55%"}
+::::: {.columns}
+::: {.column width="50%"}
 - A camera at every node
 - OpenCV: total pixel motion as a proxy for movement
 - Shared over OSC → SuperCollider sound field
 - Screens show the motion field back to visitors
-
-![](pictures/single_pi_screen_screenshot.png){.photo fig-alt="Motion visualisation on a node screen" style="max-height:170px; width:auto"}
 :::
-::::
+::: {.column width="50%"}
+![Motion visualisation on a node screen.](pictures/single_pi_screen_screenshot.png){.photo .maxh-400 fig-alt="Motion visualisation on a node screen"}
+:::
+:::::
 
 ::: prose
-Without cables, nodes could be placed freely through the space. In installation mode, visitors interacted through a camera at each node. A Python/OpenCV script tracked total pixel movement as a proxy for people moving through the room; each node's data was shared over OSC and used as control data for a SuperCollider sound field. Each touchscreen showed the direction every pixel moved between frames, inviting visitors to find out how their active and passive movement changed the sound field.
+In installation mode, visitors interacted through a camera at each node. A Python/OpenCV script tracked total pixel movement as a proxy for people moving through the room; each node's data was shared over OSC and used as control data for a SuperCollider sound field. Each touchscreen showed the direction every pixel moved between frames, inviting visitors to find out how their active and passive movement changed the sound field.
 :::
 
 ## Kuala Lumpur: performance

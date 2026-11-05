@@ -53,6 +53,10 @@ In fall 2024 SPRAWL V2 was used at The Goat Farm Arts Center in Atlanta. Twelve 
 
 
 :::
+
+::: {.fragment}
+![](figures/topology_v2.svg){.v2-fig fig-alt="SPRAWL V2: six access points wired as a fully connected mesh carrying audio and control."}
+:::
 :::
 ::::
 
