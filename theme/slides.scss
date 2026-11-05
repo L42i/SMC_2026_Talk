@@ -74,7 +74,7 @@ $presentation-h1-font-size: 1.7em;
 .reveal img.ph { max-height: 580px; width: auto; max-width: 100%; }
 .reveal .bignums { font-size: 0.75em; }
 .reveal blockquote { border-left: 6px solid $mesh-orange; background: none; box-shadow: none; font-style: normal; width: 90%; }
-.reveal .timeline { font-size: 30px; margin-top: 1.4em; }
+.reveal .tl2 { font-size: 24px; margin-top: 1em; }
 .reveal .tl-braces { font-size: 26px; }
 .reveal .smaller-text { font-size: 0.8em; }
 
@@ -95,14 +95,12 @@ $presentation-h1-font-size: 1.7em;
 .reveal .references-slide #refs { font-size: 0.82em; column-count: 2; column-gap: 1.5em; line-height: 1.25; }
 .reveal .references-slide .csl-entry { break-inside: avoid; margin-bottom: 0.4em; }
 
-// Timeline: always horizontal on slides. components.css turns it vertical below
-// 820px window width (meant for phones on the web page); slides scale, so undo that here.
-.reveal .timeline { grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 0 .6em; }
-.reveal .timeline::before { display: block; }
-.reveal .timeline .tl-item { align-items: center; border-left: 0; padding-left: 0; }
-.reveal .timeline .tl-date { height: var(--date-h); }
-.reveal .timeline .tl-tab { height: var(--tab-h); justify-content: center; padding: 0 .4em; }
-.reveal .timeline .tl-dot { display: flex; height: var(--dot-row); }
+// Timeline: always the two-lane layout on slides. components.css stacks it below 820px window
+// width (meant for phones on the web page); slides scale, so undo that here.
+.reveal .tl2 { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); grid-template-rows: auto var(--dot-row) auto; gap: 0 .5em; }
+.reveal .tl2-spine, .reveal .tl2-dot { display: flex; }
+.reveal .tl2-ms, .reveal .tl2-ev { display: grid; border-left: 0; padding-left: 0; margin-left: 0; }
+.reveal .tl2-body { align-items: center; }
 .reveal .tl-braces { display: grid; }
 
 // Image height caps as classes: a style= attribute on a captioned image lands on the wrapper div, not the img.

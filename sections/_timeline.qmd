@@ -1,47 +1,109 @@
-<!-- Timeline written as Quarto divs (not raw HTML) so citations work inside it. -->
+<!-- Two-lane timeline written as Quarto divs (not raw HTML) so citations work inside it.
+     Above the axis: system versions (milestones). Below: events where a system was used.
+     Grid columns: 1-2 SPRAWL | 3-4 SPRAWL V2 | 5-6 MËSH.  Items are in time order so they step in correctly. -->
 
-:::::: {.timeline role="list" aria-label="Timeline from SPRAWL to MËSH"}
+:::::: {.tl2 role="list" aria-label="Timeline: system versions above the axis, events below"}
 
-::: {.tl-item .sprawl role="listitem"}
+::: {.tl2-spine}
+:::
+
+::: {.tl2-ms .sprawl .fragment role="listitem" style="grid-column: 1 / span 2"}
+::: {.tl2-body}
 [2019 / 2020]{.tl-date}
 [SPRAWL]{.tl-tab .system}
-[]{.tl-dot}
 [Central server for routing, mixing, spatialisation. Access points on a **wired** LAN [@voncoler2020sprawl].]{.tl-desc}
 :::
+::: {.tl2-dot}
+[]{.d}
+:::
+:::
 
-::: {.tl-item .teal .fragment role="listitem"}
-[2023]{.tl-date}
+::: {.tl2-ev .sprawl .fragment role="listitem" style="grid-column: 1"}
+::: {.tl2-dot}
+[]{.d}
+:::
+::: {.tl2-body}
+[Feb 2020]{.tl-date}
+[Berlin]{.tl-tab}
+[[Silent Green]{.tl-name}. First public concert, 10 access points.]{.tl-desc}
+:::
+:::
+
+::: {.tl2-ev .sprawl .fragment role="listitem" style="grid-column: 2"}
+::: {.tl2-dot}
+[]{.d}
+:::
+::: {.tl2-body}
+[Late 2023]{.tl-date}
+[Magdeburg]{.tl-tab}
+[[SinusTon]{.tl-name}. Improved SPRAWL.]{.tl-desc}
+:::
+:::
+
+::: {.tl2-ms .teal .fragment role="listitem" style="grid-column: 3 / span 2"}
+::: {.tl2-body}
+[2024]{.tl-date}
 [SPRAWL V2]{.tl-tab .system}
-[]{.tl-dot}
-[Server removed; access points in a **ring topology**. Low latency, still fully wired.]{.tl-desc}
+[**A speaker at every access point.** No server, fully connected wired mesh.]{.tl-desc}
+:::
+::: {.tl2-dot}
+[]{.d}
+:::
 :::
 
-::: {.tl-item .teal .event .fragment role="listitem"}
+::: {.tl2-ev .teal .fragment role="listitem" style="grid-column: 3"}
+::: {.tl2-dot}
+[]{.d}
+:::
+::: {.tl2-body}
 [Fall 2024]{.tl-date}
-[Goat Farm Arts Center]{.tl-tab}
-[]{.tl-dot}
-[Atlanta, GA. 12 access points, student-built SuperCollider pieces.]{.tl-desc}
+[Atlanta]{.tl-tab}
+[[Goat Farm Arts Center]{.tl-name}. 12 access points, student-built SuperCollider pieces.]{.tl-desc}
+:::
 :::
 
-::: {.tl-item .teal .event .fragment role="listitem"}
+::: {.tl2-ev .teal .fragment role="listitem" style="grid-column: 4"}
+::: {.tl2-dot}
+[]{.d}
+:::
+::: {.tl2-body}
 [Spring 2025]{.tl-date}
-[SuperCollider Symposium]{.tl-tab}
-[]{.tl-dot}
-[Washington, DC. 4 access points, a 10-hour drive: the touring pain point.]{.tl-desc}
+[Washington, DC]{.tl-tab}
+[[SuperCollider Symposium]{.tl-name}. 5 access points, a 10-hour drive: the touring pain point.]{.tl-desc}
+:::
 :::
 
-::: {.tl-item .mesh .fragment role="listitem"}
+::: {.tl2-ms .mesh .fragment role="listitem" style="grid-column: 5 / span 2"}
+::: {.tl2-body}
 [Fall 2025]{.tl-date}
 [MËSH]{.tl-tab .system}
-[]{.tl-dot}
-[**Wireless** Raspberry Pi nodes. Kuala Lumpur debut, 8 nodes as checked luggage.]{.tl-desc}
+[Fully connected **wireless** mesh network.]{.tl-desc}
+:::
+::: {.tl2-dot}
+[]{.d}
+:::
 :::
 
-::: {.tl-item .mesh .event .fragment role="listitem"}
+::: {.tl2-ev .mesh .fragment role="listitem" style="grid-column: 5"}
+::: {.tl2-dot}
+[]{.d}
+:::
+::: {.tl2-body}
+[Fall 2025]{.tl-date}
+[Kuala Lumpur]{.tl-tab}
+[[Convergence Asia]{.tl-name}. 8 nodes as checked luggage.]{.tl-desc}
+:::
+:::
+
+::: {.tl2-ev .mesh .fragment role="listitem" style="grid-column: 6"}
+::: {.tl2-dot}
+[]{.d}
+:::
+::: {.tl2-body}
 [Spring 2026]{.tl-date}
-[ICMC Hamburg]{.tl-tab}
-[]{.tl-dot}
-[Workshop and 8-hour autonomous installation.]{.tl-desc}
+[Hamburg]{.tl-tab}
+[[ICMC]{.tl-name}. Workshop and 8-hour autonomous installation.]{.tl-desc}
+:::
 :::
 
 ::::::
