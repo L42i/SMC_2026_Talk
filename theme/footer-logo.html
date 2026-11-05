@@ -8,7 +8,7 @@
   (function () {
     function setup(root) {
       var dots = root.querySelectorAll(".cs-dot");
-      var frame = root.querySelector("iframe");
+      var items = root.querySelectorAll(".cs-item");
       var slide = root.closest("section");
       var n = dots.length;
       function active() { return Reveal.getCurrentSlide() === slide; }
@@ -16,9 +16,12 @@
       function sync() {
         var c = active() ? Math.max(0, Math.min(n - 1, current())) : 0;
         dots.forEach(function (d, i) { d.classList.toggle("on", i === c); });
-        if (frame && frame.contentWindow && (!active() || c !== n - 1)) {
-          frame.contentWindow.postMessage(JSON.stringify({ event: "command", func: "pauseVideo", args: "" }), "*");
-        }
+        items.forEach(function (it, i) {
+          if (active() && i === c) return;
+          var v = it.querySelector("video"); if (v) v.pause();
+          var f = it.querySelector("iframe");
+          if (f && f.contentWindow) f.contentWindow.postMessage(JSON.stringify({ event: "command", func: "pauseVideo", args: "" }), "*");
+        });
       }
       root.querySelector(".cs-next").addEventListener("click", function () { Reveal.nextFragment(); });
       root.querySelector(".cs-prev").addEventListener("click", function () { Reveal.prevFragment(); });

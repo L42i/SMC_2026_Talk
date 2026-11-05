@@ -142,7 +142,7 @@ $presentation-h1-font-size: 1.93em;     // = 58px
 .reveal .carousel { position: relative; width: 88%; margin-left: auto; margin-right: auto; }
 .reveal .carousel .cs-stage { position: relative; width: 100%; aspect-ratio: 16 / 9; background: #111; border-radius: 12px; overflow: hidden; box-shadow: 0 6px 24px rgba(0,0,0,.25); }
 .reveal .carousel .cs-item { position: absolute; inset: 0; }
-.reveal .carousel .cs-item img, .reveal .carousel .cs-item iframe { display: block; width: 100%; height: 100%; max-width: none; max-height: none; margin: 0; border: 0; border-radius: 0; box-shadow: none; object-fit: contain; background: #111; }
+.reveal .carousel .cs-item img, .reveal .carousel .cs-item iframe, .reveal .carousel .cs-item video { display: block; width: 100%; height: 100%; max-width: none; max-height: none; margin: 0; border: 0; border-radius: 0; box-shadow: none; object-fit: contain; background: #111; }
 .reveal .carousel .cs-cap { position: absolute; left: 50%; bottom: 14px; transform: translateX(-50%); white-space: normal; max-width: 92%; text-align: center; font-size: 17px; color: $ink; background: rgba(255,255,255,.9); border-radius: 6px; padding: .2em .7em; }
 .reveal .carousel .cs-btn { position: absolute; top: calc(50% - 26px); width: 52px; height: 52px; border: 0; border-radius: 50%; background: rgba(255,255,255,.85); color: $ink; font-size: 36px; line-height: 1; cursor: pointer; z-index: 5; display: flex; align-items: center; justify-content: center; padding: 0 0 4px; }
 .reveal .carousel .cs-btn:hover { background: #fff; }
@@ -180,5 +180,7 @@ $presentation-h1-font-size: 1.93em;     // = 58px
 // Two columns where the right one keeps its text on top and a figure at the bottom
 .reveal .split-cols { display: flex; min-height: 720px; }
 .reveal .split-cols > .column:last-child { display: flex; flex-direction: column; justify-content: flex-start; }
-.reveal .mesh-fig { display: block; max-height: 330px; width: auto; max-width: 100%; margin: 0 0 0 auto; border-radius: 0; box-shadow: none; }
-.reveal .v2-fig { display: block; max-height: 270px; width: auto; max-width: 100%; margin: .5em 0 0 auto; border-radius: 0; box-shadow: none; }
+.reveal .mesh-fig { display: block; max-height: 330px; width: auto; max-width: 100%; margin: 0 auto; border-radius: 0; box-shadow: none; }
+.reveal .v2-fig { display: block; max-height: 250px; width: auto; max-width: 100%; margin: 0 auto .3em; border-radius: 0; box-shadow: none; }
+.reveal .carousel.cs-32 { width: 88%; margin-left: 0; margin-right: auto; }
+.reveal .carousel.cs-32 .cs-stage { aspect-ratio: 3 / 2; }

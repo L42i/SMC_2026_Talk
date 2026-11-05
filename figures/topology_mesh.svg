@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="700 0 700 620" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" role="img" aria-label="SPRAWL V2 access points wired as a fully connected mesh versus MËSH nodes connected wirelessly to a router">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="700 0 700 560" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif" role="img" aria-label="SPRAWL V2 access points wired as a fully connected mesh versus MËSH nodes connected wirelessly to a router">
 <line x1="340" y1="115" x2="500" y2="208" stroke="#2ec27e" stroke-width="4"/>
 <line x1="340" y1="115" x2="500" y2="392" stroke="#2ec27e" stroke-width="4"/>
 <line x1="340" y1="115" x2="340" y2="485" stroke="#2ec27e" stroke-width="4"/>
@@ -29,7 +29,6 @@
 <text x="340" y="44" text-anchor="middle" font-size="40" font-weight="700" fill="#2ec27e">SPRAWL V2</text>
 <text x="340" y="566" text-anchor="middle" font-size="22" fill="#6e6e6e">fully connected mesh</text>
 <text x="340" y="596" text-anchor="middle" font-size="25" fill="#1d232b">wired Ethernet · audio + control</text>
-<line x1="700.0" y1="40" x2="700.0" y2="540" stroke="#d0d0d0" stroke-width="2" stroke-dasharray="4 8"/>
 <line x1="1060" y1="300" x2="1137" y2="115" stroke="#9141ac" stroke-width="4" stroke-dasharray="3 11" stroke-linecap="round"/>
 <line x1="1060" y1="300" x2="1245" y2="223" stroke="#9141ac" stroke-width="4" stroke-dasharray="3 11" stroke-linecap="round"/>
 <line x1="1060" y1="300" x2="1245" y2="377" stroke="#9141ac" stroke-width="4" stroke-dasharray="3 11" stroke-linecap="round"/>
@@ -59,6 +58,5 @@
 <line x1="1094" y1="266" x2="1102" y2="238" stroke="#1d232b" stroke-width="5" stroke-linecap="round"/>
 <text x="1060" y="308" text-anchor="middle" font-size="22" font-weight="700" fill="#fff">router</text>
 <text x="1060" y="368" text-anchor="middle" font-size="22" fill="#9141ac">OSC</text>
-<text x="1060" y="596" text-anchor="middle" font-size="25" fill="#1d232b">wireless LAN · control only, audio made locally</text>
 <text x="1060" y="44" text-anchor="middle" font-size="40" font-weight="700" fill="#9141ac">MËSH</text>
 </svg>
