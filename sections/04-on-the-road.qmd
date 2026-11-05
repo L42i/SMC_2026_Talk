@@ -6,7 +6,7 @@
 <div class="carousel cs-32" role="region" aria-label="Kuala Lumpur: the concert and the interactive installation">
   <div class="cs-stage">
     <div class="cs-item fragment fade-out" data-fragment-index="0"><img src="pictures/image_of_musician.jpg" alt="Dr. Ahmad Daudzi Musib performing with MËSH"><span class="cs-cap">Concert: Dr. Ahmad Daudzi Musib performing with MËSH.</span></div>
-    <div class="cs-item fragment fade-in-then-out" data-fragment-index="0"><img src="pictures/single_pi_screen_screenshot.png" alt="Motion visualisation on a node screen"><span class="cs-cap">Installation: motion visualisation on a node screen.</span></div>
+    <div class="cs-item fragment fade-in-then-out" data-fragment-index="0"><img src="pictures/single_pi_screen_screenshot.png" alt="Motion visualization on a node screen"><span class="cs-cap">Installation: motion visualization on a node screen.</span></div>
     <div class="cs-item cs-video fragment fade-in" data-fragment-index="1"><video controls playsinline preload="metadata" poster="media/cic_asia_visitors.jpg" src="media/cic_asia_visitors.mp4" aria-label="Visitors interacting with a node at the Convergence Innovation Competition Asia"></video></div>
   </div>
   <button class="cs-btn cs-prev" aria-label="Previous">&#8249;</button>
@@ -18,7 +18,7 @@
 ::: {.column width="55%" .tight}
 **A: Concert**
 
-- Graphic score [*DISCOUNT*](https://hvc.berlin/discount/) deployed to all nodes via Ansible
+- Graphic score [*DISCOUNT*](https://hvc.berlin/discount/) deployed to all nodes 
 - Players read the score on their node
 - Video nodes show it to the audience
 - Performers spread through the room
@@ -40,25 +40,4 @@ At the Convergence Innovation Competition Asia, MËSH ran in two modes: a concer
 In performance mode, MËSH supported a networked ensemble in which performers controlled their own audio streams. The graphic score *DISCOUNT* was deployed to all nodes simultaneously with Ansible: musicians read it on the touchscreen at their node while the video nodes displayed it for the audience. Wireless connectivity let performers, and the sound, fill the room.
 
 In installation mode, visitors interacted through a camera at each node. A Python/OpenCV script tracked total pixel movement as a proxy for people moving through the room; each node's data was shared over OSC and used as control data for a SuperCollider sound field. Each touchscreen showed the direction every pixel moved between frames, inviting visitors to find out how their active and passive movement changed the sound field.
-:::
-
-## ICMC Hamburg · Spring 2026
-
-:::: {.columns}
-::: {.column width="50%"}
-![Workshop](pictures/icmc_workshop.jpg){.photo .ph .maxh-195}
-
-![Installation](pictures/icmc_installation.jpg){.photo .ph .maxh-195}
-:::
-::: {.column width="50%"}
-- Again: 3 cases, venue speakers, **2 people · 2 h**
-- **Workshop** (1 h): four guided demos with prediction tasks and discussion
-- **Installation**: reworked sound design, lighter visuals
-  - ran autonomously for **8 hours**
-  - ~**100** visitors
-:::
-::::
-
-::: prose
-For the International Computer Music Conference in Hamburg in spring 2026 the system again travelled in three road cases, with speakers provided by the conference, and again took two people two hours to set up and soundcheck in an unfamiliar venue. The one-hour workshop introduced participants to MËSH hands-on: four guided demonstrations, each paired with prediction activities, discussion and exercises on system behaviour, use cases and trade-offs, ending with a discussion of how MËSH-type systems could fit participants' own work. The installation reworked the Kuala Lumpur piece with new sound design and more efficient visuals; it ran autonomously for eight hours and was visited by roughly 100 members of the ICMC community.
 :::

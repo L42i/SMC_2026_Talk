@@ -1,3 +1,25 @@
+## From SPRAWL to MËSH to ...
+
+:::: {.columns .summary-cols}
+::: {.column width="50%"}
+::: {.box .box-mesh}
+**So Far**
+
+- Increased interaction
+- More travel options
+- Minimal venue requirements
+:::
+:::
+::: {.column width="50%"}
+::: {.box .box-mesh}
+**Up Next**
+
+- Explore audio over Wi-Fi!
+- Use touch laptops?
+:::
+:::
+::::
+
 ## References {.references-slide .scrollable}
 
 ::: {#refs}

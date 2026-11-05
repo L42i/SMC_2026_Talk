@@ -28,8 +28,9 @@ Requires [Quarto](https://quarto.org) ≥ 1.5 (tested with 1.6).
 sections/01-why.qmd          intro, problem, timeline, related work
 sections/02-sprawl.qmd       SPRAWL, SPRAWL V2, Goat Farm, SC Symposium
 sections/03-mesh.qmd         design goals, architecture, hardware, software
-sections/04-on-the-road.qmd  Kuala Lumpur, ICMC Hamburg
-sections/05-wrap-up.qmd      comparison, conclusions, thanks, references
+sections/04-on-the-road.qmd  Kuala Lumpur
+sections/05-icmc.qmd         ICMC Hamburg: concert, installation, workshop
+sections/06-wrap-up.qmd      summary and outlook, references
 ```
 
 Reorder or delete include lines to restructure the talk. Paths inside the

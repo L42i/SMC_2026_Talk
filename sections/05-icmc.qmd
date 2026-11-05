@@ -1,0 +1,78 @@
+# ICMC Hamburg · Spring 2026 {background-image="pictures/icmc_installation.jpg" background-size="cover" background-color="#000" background-opacity="0.7"}
+
+::: {.on-photo}
+Concert · Installation · Workshop
+:::
+
+::: prose
+For the International Computer Music Conference in Hamburg in spring 2026 the system again traveled in three road cases, with speakers provided by the conference, and again took two people two hours to set up and soundcheck in an unfamiliar venue. MËSH appeared in three formats: a concert, an interactive installation and a workshop.
+:::
+
+## ICMC: Concert
+
+:::: {.columns .mid-all}
+::: {.column width="72%"}
+![Concert: zlister (Orlando Kenny).](pictures/icmc_concert.jpg){.photo .maxh-640 fig-alt="The performer zlister (Orlando Kenny) at a microphone in front of a projected grid visual, with a MËSH node on a table on each side of the stage"}
+:::
+::: {.column width="28%"}
+- zlister (Orlando Kenny)
+- Rap, popular music
+- Different stems synchronized on all nodes
+:::
+::::
+
+::: prose
+The concert at ICMC 2026 featured zlister (Orlando Kenny): a rap performance, popular music, with the MËSH nodes on stage and a projected visual behind.
+:::
+
+## ICMC: Installation
+
+:::: {.columns .mid-all}
+::: {.column width="72%"}
+```{=html}
+<div class="carousel cs-wide" role="region" aria-label="The ICMC installation: photo and video recording">
+  <div class="cs-stage">
+    <div class="cs-item fragment fade-out" data-fragment-index="0"><img src="pictures/icmc_installation.jpg" alt="Hall with a projection screen, loudspeakers and MËSH nodes on tables, lit in pink and blue, with a visitor in front of the stage"><span class="cs-cap">The installation hall.</span></div>
+    <div class="cs-item cs-video fragment fade-in" data-fragment-index="0"><iframe src="https://www.youtube-nocookie.com/embed/GC1tzoRq-88?enablejsapi=1&rel=0" title="MËSH installation at ICMC 2026" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+  </div>
+  <button class="cs-btn cs-prev" aria-label="Previous">&#8249;</button>
+  <button class="cs-btn cs-next" aria-label="Next">&#8250;</button>
+  <div class="cs-dots"><button class="cs-dot" aria-label="Item 1"></button><button class="cs-dot" aria-label="Item 2"></button></div>
+</div>
+```
+:::
+::: {.column width="28%"}
+- 8 nodes
+- Ran for 8 hours
+- ~100 visitors
+:::
+::::
+
+::: prose
+The installation reworked the Kuala Lumpur piece with new sound design and more efficient visuals; it ran autonomously for eight hours and was visited by roughly 100 members of the ICMC community. The conference recorded it: "MËSH" by Henry Windish, Tristan Peng and Henrik von Coler.
+:::
+
+## ICMC: Workshop
+
+:::: {.columns .mid-all}
+::: {.column width="72%"}
+```{=html}
+<div class="carousel cs-wide" role="region" aria-label="The ICMC workshop">
+  <div class="cs-stage">
+    <div class="cs-item fragment fade-out" data-fragment-index="0"><img src="pictures/icmc_workshop.jpg" alt="Two presenters on stage in front of the workshop title slide: ICMC 2026 Workshop, Distributed Ensemble Interaction and MESH"><span class="cs-cap">Workshop: Distributed Ensemble Interaction and MESH.</span></div>
+    <div class="cs-item fragment fade-in" data-fragment-index="0"><img src="pictures/icmc_workshop_2.jpg" alt="Participants standing around MËSH nodes while a slide on time and synchronization is projected"><span class="cs-cap">Participants at the nodes.</span></div>
+  </div>
+  <button class="cs-btn cs-prev" aria-label="Previous">&#8249;</button>
+  <button class="cs-btn cs-next" aria-label="Next">&#8250;</button>
+  <div class="cs-dots"><button class="cs-dot" aria-label="Item 1"></button><button class="cs-dot" aria-label="Item 2"></button></div>
+</div>
+```
+:::
+::: {.column width="28%"}
+- Simple activities for visitors
+:::
+::::
+
+::: prose
+The one-hour workshop introduced participants to MËSH hands-on: four guided demonstrations, each paired with prediction activities, discussion and exercises on system behavior, use cases and trade-offs, ending with a discussion of how MËSH-type systems could fit participants' own work.
+:::

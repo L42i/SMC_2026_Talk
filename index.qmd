@@ -26,4 +26,6 @@ nocite: |
 
 {{< include sections/04-on-the-road.qmd >}}
 
-{{< include sections/05-wrap-up.qmd >}}
+{{< include sections/05-icmc.qmd >}}
+
+{{< include sections/06-wrap-up.qmd >}}
