@@ -64,7 +64,7 @@ filters/hybrid.lua     prose → notes, slides-only / page-only, photo headings
 theme/slides.scss      deck theme (paper colours, big type for video calls)
 theme/page.scss        page theme
 theme/components.css   timeline + big-number blocks, shared by both
-figures/topology.svg   SPRAWL V2 ring vs. MËSH star (tools/make_topology.py)
+figures/topology.svg   SPRAWL V2 mesh vs. MËSH star (tools/make_topology.py)
 pictures/              photos, downscaled to 2000 px (tools/prepare_images.py)
 references.bib, ieee.csl
 ```

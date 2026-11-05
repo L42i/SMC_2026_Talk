@@ -4,11 +4,11 @@
 
 | | SPRAWL V2 | MËSH |
 |---|---|---|
-| Network | Wired Ethernet, ring | Dedicated wireless LAN |
+| Network | Wired Ethernet, fully connected mesh | Dedicated wireless LAN |
 | Between units | Audio + control | Control only (OSC) |
 | Sound generation | Over the network | Locally on each node |
 | Deployment | Per access point | Ansible playbook for all nodes |
-| On the road | 4 access points, 10 h by car | 8 nodes in 3 cases, checked luggage |
+| On the road | 5 access points, 10 h by car | 8 nodes in 3 cases, checked luggage |
 
 ::: prose
 Compared with SPRAWL V2, MËSH trades networked audio for local synthesis and wireless control. In return it fits in checked luggage, sets up in two hours with two people, and places nodes wherever the space suggests.

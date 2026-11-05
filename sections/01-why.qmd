@@ -109,6 +109,6 @@ MËSH is our answer: a portable ensemble system built around a wireless LAN and 
 :::
 
 ::: prose
-The path covered in this talk: from the original, server-based SPRAWL [@voncoler2020sprawl], through the ring-based SPRAWL V2 and two deployments that exposed its touring overhead, to the wireless MËSH system and its first two international deployments.
+The path covered in this talk: from the original, server-based SPRAWL [@voncoler2020sprawl], through a late-2023 pre-version and the wired, fully connected SPRAWL V2 with a speaker at every access point, and two deployments that exposed its touring overhead, to the wireless MËSH system and its first two international deployments.
 :::
 

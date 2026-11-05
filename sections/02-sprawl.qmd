@@ -1,4 +1,4 @@
-# SPRAWL V2: the wired predecessor {background-image="pictures/goat_farm.jpeg" background-opacity="0.45"}
+# SPRAWL V2: the wired predecessor of MËSH {background-image="pictures/goat_farm.jpeg" background-opacity="0.45"}
 
 ## SPRAWL → SPRAWL V2
 
@@ -11,16 +11,16 @@
 - Control via OSC [@wright2003opensound]
 :::
 ::: {.column width="50%" .fragment}
-**SPRAWL V2** (2023)
+**SPRAWL V2** (2024)
 
+- **A speaker at every access point**
 - New hardware, **no central server**
-- Access points in a **ring**
-- Stable and low latency, but every link is a cable
+- Fully connected mesh, but every link is a cable
 :::
 ::::
 
 ::: prose
-The original SPRAWL used a client–server architecture: a central server handled audio routing, mixing and spatialisation, and performers connected through access points on a wired LAN. Audio from each access point went to the server, was processed and redistributed to the other performers and the spatialisation system, while OSC handled control such as levels, routing and spatialisation. In 2023, SPRAWL V2 updated the hardware and removed the central server, connecting the access points in a ring. That is stable and low-latency, but it still depends on wired connections between all components.
+The original SPRAWL used a client–server architecture: a central server handled audio routing, mixing and spatialisation, and performers connected through access points on a wired LAN. Audio from each access point went to the server, was processed and redistributed to the other performers and the spatialisation system, while OSC handled control such as levels, routing and spatialisation. A pre-version in late 2023 in Germany almost had this, but its speakers were still placed conservatively. SPRAWL V2, in 2024, put a speaker at every access point, updated the hardware and removed the central server, connecting the access points in a fully connected mesh. That is stable and low-latency, but it still depends on wired connections between all components.
 :::
 
 ## Goat Farm Arts Center, Atlanta · Fall 2024
@@ -50,8 +50,8 @@ In fall 2024 SPRAWL V2 was used at The Goat Farm Arts Center in Atlanta. Twelve 
 :::
 ::: {.column width="45%"}
 - Workshop: techniques for distributed systems
-- Ring topology; attendees designed the processing for their access point
-- **4 access points**
+- Fully connected mesh; attendees designed the processing for their access point
+- **5 access points**
 - **10-hour drive** in a midsize car
 
 ::: {.fragment}
@@ -61,5 +61,5 @@ In fall 2024 SPRAWL V2 was used at The Goat Farm Arts Center in Atlanta. Twelve 
 ::::
 
 ::: prose
-After being taught in the classroom in fall 2024, SPRAWL V2 went to Washington, DC in spring 2025 for a workshop at the SuperCollider Symposium. The workshop covered techniques for working with SPRAWL V2 and, more generally, with distributed performance systems; attendees designed the audio processing for their own access point in the ring. Bringing just four access points meant a ten-hour drive from Atlanta in a midsize vehicle. That trip motivated MËSH.
+After being taught in the classroom in fall 2024, SPRAWL V2 went to Washington, DC in spring 2025 for a workshop at the SuperCollider Symposium. The workshop covered techniques for working with SPRAWL V2 and, more generally, with distributed performance systems; attendees designed the audio processing for their own access point in the mesh. Bringing five access points meant a ten-hour drive from Atlanta in a midsize vehicle. That trip motivated MËSH.
 :::
