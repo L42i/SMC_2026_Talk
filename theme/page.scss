@@ -34,3 +34,10 @@ main a, .csl-entry { overflow-wrap: anywhere; }
 
 main figcaption, main .caption { text-align: center; }
 main img { border-radius: 12px; }
+
+// Carousel on the page: no stepping, so show the items one under the other
+.carousel .cs-item { margin: 0 0 1rem; position: relative; }
+.carousel .cs-item img, .carousel .cs-item iframe { width: 100%; display: block; }
+.carousel .cs-item iframe { aspect-ratio: 16 / 9; border: 0; }
+.carousel .cs-btn, .carousel .cs-dots { display: none; }
+.carousel .cs-cap { display: block; text-align: center; color: #6e6e6e; font-size: .85rem; margin-top: .3rem; }
