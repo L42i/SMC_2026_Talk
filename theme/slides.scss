@@ -29,10 +29,6 @@ $presentation-h1-font-size: 1.93em;     // = 58px
 .reveal .footer { font-size: 0.42em; color: $muted; }
 
 .reveal h2 { margin-bottom: 0.6em; }
-.reveal h2::after {
-  content: ""; display: block; width: 2.2em; height: 0.12em;
-  background: $mesh-orange; margin-top: 0.25em; border-radius: 2px;
-}
 
 .reveal ul { line-height: 1.35; }
 .reveal li { margin-bottom: 0.35em; }
@@ -184,3 +180,17 @@ $presentation-h1-font-size: 1.93em;     // = 58px
 .reveal .v2-fig { display: block; max-height: 250px; width: auto; max-width: 100%; margin: 0 auto .3em; border-radius: 0; box-shadow: none; }
 .reveal .carousel.cs-32 { width: 88%; margin-left: 0; margin-right: auto; }
 .reveal .carousel.cs-32 .cs-stage { aspect-ratio: 3 / 2; }
+
+// Embedded video in a 16:9 frame (YouTube)
+.reveal .yt-frame { position: relative; width: 100%; aspect-ratio: 16 / 9; border-radius: 12px; overflow: hidden; background: #000; box-shadow: 0 6px 24px rgba(0,0,0,.25); }
+.reveal .yt-frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+// Line of text on a photo divider
+.reveal .on-photo p { color: #fff; font-size: 1.1em; text-shadow: 0 2px 18px rgba(0,0,0,.6); }
+
+// Summary slide: two big blocks, tops aligned, a bit below the title
+.reveal .summary-cols { display: flex; align-items: stretch; gap: 1.2em; padding-top: 150px; font-size: 1.35em; }
+.reveal .summary-cols > .column { display: flex; }
+.reveal .summary-cols > .column > .box { flex: 1; margin-top: 0; }
+.reveal .summary-cols .box { margin-top: 0; }
+.reveal .carousel.cs-wide { width: 94%; margin-left: 0; margin-right: auto; }
+.reveal img.maxh-640 { max-height: 640px; width: auto; max-width: 96%; }
